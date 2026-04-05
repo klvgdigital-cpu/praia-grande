@@ -1,52 +1,45 @@
-/* Reset e Base */
+/* RESET E BASE PROFISSIONAL */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { background-color: #061020; color: #F5F5F5; font-family: 'Inter', sans-serif; line-height: 1.6; }
 .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 5%; }
 .text-center { text-align: center; }
+h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; color: #FFFFFF; font-weight: 700; }
 
-/* Header e Logo (Ajustada para 120px para ficar bem imponente) */
-header { background-color: #061020; border-bottom: 1px solid rgba(212, 175, 55, 0.3); padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+/* HEADER E LOGO IMPONENTE */
+header { background-color: rgba(6, 16, 32, 0.98); border-bottom: 1px solid rgba(212, 175, 55, 0.3); padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
 .header-container { display: flex; justify-content: space-between; align-items: center; }
 
+/* Tamanho da logo corrigido para ser grande */
 .header-logo { 
-    height: 120px !important; 
+    height: 110px !important; 
     width: auto !important; 
-    max-height: 120px !important;
     display: block !important;
-    transition: 0.3s;
 }
 
-.nav-links { list-style: none; display: flex; gap: 20px; }
-.nav-links a { color: #FFF; text-decoration: none; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; }
+.nav-links { list-style: none; display: flex; gap: 25px; }
+.nav-links a { color: #FFF; text-decoration: none; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; }
 
-/* Hero e Selo */
-.hero { padding: 80px 0; background: radial-gradient(circle at top, #112240 0%, #061020 100%); }
-.hero h1 { font-family: 'Montserrat', sans-serif; font-size: 3rem; margin: 20px 0; color: #FFFFFF; }
-.subtitle { color: #A0AAB5; max-width: 700px; margin: 0 auto 30px; font-size: 1.1rem; }
+/* HERO E BOTOES */
+.hero { padding: 100px 0; background: radial-gradient(circle at top, #112240 0%, #061020 100%); }
+.hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin: 20px 0; }
+.cta-group { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
+.btn { padding: 18px 35px; border-radius: 6px; text-decoration: none; font-weight: 800; text-transform: uppercase; transition: 0.3s; }
+.btn-primary { background-color: #D4AF37; color: #061020; }
+.btn-secondary { border: 2px solid #D4AF37; color: #D4AF37; }
 
-/* Botões */
-.cta-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
-.btn { padding: 18px 30px; border-radius: 5px; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.9rem; transition: 0.3s; }
-.btn-primary { background-color: #D4AF37; color: #061020; border: none; }
-.btn-secondary { border: 2px solid #D4AF37; color: #D4AF37; background: transparent; }
-.btn:hover { opacity: 0.8; transform: translateY(-2px); }
+/* GRID DE CARDS (Diferenciais, SSMA, etc) */
+.differentials-grid, .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
+.card, .product-card { background: #112240; padding: 40px; border-radius: 12px; border: 1px solid rgba(212, 175, 55, 0.1); }
+.card h3 { color: #D4AF37; margin-bottom: 15px; }
 
-/* Grid de Diferenciais */
-#diferencial { padding: 80px 0; }
-.differentials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
-.card { background: #112240; padding: 40px; border-radius: 12px; border: 1px solid rgba(212, 175, 55, 0.1); transition: 0.3s; }
-.card:hover { border-color: #D4AF37; }
-.card h3 { color: #D4AF37; margin-bottom: 15px; font-family: 'Montserrat', sans-serif; font-size: 1.4rem; }
-.card p { color: #E0E0E0; font-size: 1rem; }
+/* CARROSSEL */
+.carousel-track { display: flex; gap: 60px; padding: 30px 0; overflow: hidden; color: #A0AAB5; font-weight: 800; }
 
-/* Footer */
-footer { background: #061020; border-top: 1px solid rgba(212, 175, 55, 0.2); padding: 60px 0; margin-top: 80px; }
-footer p { color: #A0AAB5; font-size: 0.9rem; margin-top: 20px; }
+/* WHATSAPP FLUTUANTE */
+.whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: #FFF; width: 65px; height: 65px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 35px; z-index: 2000; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
 
-/* Responsividade Celular */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
-    .header-logo { height: 80px !important; }
+    .header-logo { height: 75px !important; }
     .nav-links { display: none; }
-    .hero h1 { font-size: 2.2rem; }
-    .header-container { justify-content: center; }
 }

@@ -19,7 +19,7 @@
   <header>
     <div class="container header-container">
       <a href="/" class="logo" aria-label="K Portas Home">
-        <img src="logo-transparente-kportas-svg.svg" style="height: 50px !important; width: auto !important; display: block;" class="logo-site" alt="K Portas">
+        <img src="assets/logo-kportas.svg" width="220" height="48" class="logo-site" alt="K Portas">
       </a>
       <nav>
         <ul class="nav-links">
@@ -64,15 +64,15 @@
     </div>
   </section>
 
-  <div style="background-color: #061020; padding: 25px 5%; border-top: 1px solid rgba(212, 175, 55, 0.2); border-bottom: 1px solid rgba(212, 175, 55, 0.2); display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; text-transform: uppercase;">
+  <div class="trust-strip">
     <span style="color: #A0AAB5; font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; gap: 10px; letter-spacing: 1px;"><i class="fa-solid fa-registered" style="color: #D4AF37; font-size: 1.2rem;"></i> Marca Registrada®</span>
     <span style="color: #A0AAB5; font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; gap: 10px; letter-spacing: 1px;"><i class="fa-solid fa-shield-halved" style="color: #D4AF37; font-size: 1.2rem;"></i> Engenharia CREA-SP</span>
     <span style="color: #A0AAB5; font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; gap: 10px; letter-spacing: 1px;"><i class="fa-solid fa-medal" style="color: #D4AF37; font-size: 1.2rem;"></i> Selo 12 Meses Garantia</span>
   </div>
 
-  <section id="autoridade" class="bg-darker" style="padding: 28px 0; border-bottom: 1px solid rgba(212, 175, 55, 0.1); overflow: hidden;">
+  <section id="autoridade" class="bg-darker section--compact">
     <div class="container text-center">
-      <p style="color: #A0AAB5; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px;">Empresas que confiam na engenharia da K Portas</p>
+      <p class="carousel-lead">Empresas que confiam na engenharia da K Portas</p>
     </div>
     <div class="carousel-container">
       <div class="carousel-track">
@@ -92,7 +92,7 @@
     </div>
   </section>
 
-  <section id="diferencial" style="padding-bottom: 28px;">
+  <section id="diferencial">
     <div class="container text-center">
       <h2 class="section-title">O Diferencial K Portas</h2>
       <p class="section-desc">A Segurança que Construtoras e Grandes Lojas Exigem.</p>
@@ -122,7 +122,7 @@
     </div>
   </section>
 
-  <section id="produtos" style="padding-top: 28px;">
+  <section id="produtos">
     <div class="container">
       <h2 class="section-title text-center">Nossas Soluções</h2>
       <div class="products-grid mt-4">
@@ -287,7 +287,7 @@
   <section id="personalizacao" class="bg-darker" style="border-top: 1px solid rgba(212, 175, 55, 0.1);">
     <div class="container text-center">
       <h2 class="section-title">Personalização Profissional</h2>
-      <p class="section-desc" style="max-width: 800px; margin: 0 auto; color: #E0E0E0;">
+      <p class="section-desc section-desc--light">
         Nossas portas são entregues completas e personalizadas para o seu projeto, desde o acabamento estético até as normas de segurança obrigatórias.
       </p>
       
@@ -336,7 +336,7 @@
           </span>
         </div>
         <h2 class="section-title" style="font-size: clamp(1.4rem, 2.5vw, 2.0rem);">Fábrica e Distribuição de Materiais para Portas de Aço de Enrolar</h2>
-        <p class="section-desc" style="color: #F5F5F5; font-weight: 500;">
+        <p class="section-desc section-desc--emphasis">
           Soluções completas com estoque à pronta entrega para serralherias e construtoras.
         </p>
         
@@ -422,7 +422,7 @@
   <section id="portfolio" style="padding: 48px 0; border-top: 1px dashed rgba(212, 175, 55, 0.2);">
     <div class="container text-center">
       <h2 class="section-title">Projetos Realizados em todo o Estado</h2>
-      <p class="section-desc" style="margin-bottom: 50px;">Galeria de instalações técnicas, provando nossa capacidade executiva nas maiores obras paulistas.</p>
+      <p class="section-desc section-desc--portfolio">Galeria de instalações técnicas, provando nossa capacidade executiva nas maiores obras paulistas.</p>
       
       <div class="differentials-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
         <div style="text-align: center;">
@@ -467,7 +467,7 @@
   <section id="seguranca-ssma" style="border-top: 1px dashed rgba(212, 175, 55, 0.2);">
     <div class="container text-center">
       <h2 class="section-title">Segurança e Certificações Técnicas</h2>
-      <p class="section-desc" style="max-width: 850px; margin: 0 auto; color: #E0E0E0; font-size: 1.1rem; line-height: 1.6;">
+      <p class="section-desc section-desc--ssma">
         Nossa equipe é periodicamente treinada e certificada, garantindo total conformidade com as normas de SSMA para atuar em obras de engenharia, indústrias e condomínios com segurança máxima.
       </p>
       
@@ -647,7 +647,7 @@
   <footer id="contato" class="footer">
     <div class="container">
       
-      <div class="cta-footer text-center" style="margin-bottom: 60px;">
+      <div class="cta-footer text-center">
         <h2>Transforme a segurança da sua obra hoje.</h2>
         <a href="https://wa.me/5511993123964" target="_blank" class="btn btn-primary mt-2">
           <i class="fa-brands fa-whatsapp"></i> Falar com o Engenheiro
@@ -726,8 +726,8 @@
         
       </div>
       
-      <div class="crea-seal text-center" style="color: #A0AAB5; font-size: 0.9rem; display: flex; flex-direction: column; align-items: center; gap: 15px; margin-top: 60px; border-top: 1px solid rgba(212, 175, 55, 0.1); padding-top: 40px;">
-        <img src="logo-transparente-kportas-svg.svg" style="height: 50px !important; width: auto !important; display: block; opacity: 0.8; margin-bottom: 10px;" class="logo-site" alt="K Portas">
+      <div class="crea-seal text-center">
+        <img src="assets/logo-kportas.svg" width="200" height="44" class="logo-site logo-site--footer" alt="K Portas">
         <span style="border: 1px solid rgba(212, 175, 55, 0.4); padding: 8px 20px; border-radius: 30px; font-size: 0.9rem; color: #D4AF37; font-weight: 600;">
           <i class="fa-solid fa-shield-halved"></i> Engenharia Responsável | CREA-SP
         </span>

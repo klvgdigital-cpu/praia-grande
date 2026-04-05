@@ -8,7 +8,8 @@
   --kp-text: #f5f5f5;
   --kp-muted: #a0aab5;
   --kp-max: 1024px;
-  --kp-section-y: clamp(2.5rem, 5vw, 3.25rem);
+  --kp-section-y: clamp(3rem, 5.5vw, 4rem);
+  --kp-block-gap: 1.75rem;
   --kp-radius: 10px;
   --kp-font-sans: "Inter", system-ui, sans-serif;
   --kp-font-display: "Montserrat", system-ui, sans-serif;
@@ -61,6 +62,30 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  flex-shrink: 0;
+}
+
+.logo-site {
+  display: block;
+  height: auto;
+  width: clamp(160px, 38vw, 220px);
+  max-height: 48px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.logo-site--footer {
+  width: clamp(150px, 42vw, 200px);
+  max-height: 44px;
+  opacity: 0.88;
+  margin-bottom: 0.65rem;
 }
 
 .header-logo {
@@ -94,8 +119,37 @@ header {
 
 /* HERO */
 .hero {
-  padding: clamp(3.5rem, 10vw, 4.75rem) 0 clamp(2.5rem, 6vw, 3.25rem);
+  padding: clamp(3rem, 8vw, 4.25rem) 0 clamp(2.5rem, 5vw, 3.5rem);
   background: radial-gradient(ellipse 120% 80% at 50% -20%, #1a3352 0%, var(--kp-bg) 55%);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.hero-content .subtitle {
+  margin-bottom: 1.35rem;
+}
+
+.hero-content .cta-group {
+  margin-top: 0.35rem;
+}
+
+/* Faixa de selos abaixo do hero */
+.trust-strip {
+  background-color: var(--kp-bg);
+  padding: 1rem clamp(1rem, 4vw, 2rem);
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1.25rem, 4vw, 2.5rem);
+  flex-wrap: wrap;
+  text-transform: uppercase;
 }
 
 .hero h1 {
@@ -155,7 +209,8 @@ header {
 
 /* SEÇÕES */
 section {
-  padding: var(--kp-section-y) 0;
+  padding-block: var(--kp-section-y);
+  padding-inline: 0;
   border-bottom: 1px solid rgba(212, 175, 55, 0.06);
 }
 
@@ -163,10 +218,14 @@ section {
   font-family: var(--kp-font-display);
   font-size: clamp(1.45rem, 3vw, 1.95rem);
   color: var(--kp-gold);
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.5rem;
   font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1.2;
+}
+
+.section-title + .section-desc {
+  margin-top: 0.15rem;
 }
 
 .section-desc {
@@ -176,10 +235,60 @@ section {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.6;
+  margin-bottom: var(--kp-block-gap);
+}
+
+.section-desc--light {
+  max-width: 800px;
+  color: #e0e0e0;
+}
+
+.section-desc--emphasis {
+  max-width: 42rem;
+  color: #f5f5f5;
+  font-weight: 500;
+}
+
+.section-desc--portfolio {
+  margin-bottom: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+.section-desc--ssma {
+  max-width: 850px;
+  color: #e0e0e0;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+/* Bloco título + texto: espaço antes de grids / listas */
+.container > .section-title:first-child:not(:only-child) ~ .differentials-grid,
+.container > .section-title:first-child:not(:only-child) ~ .products-grid,
+.container > .section-title:first-child:not(:only-child) ~ .cities-list,
+.container > .section-title:first-child:not(:only-child) ~ .faq-container {
+  margin-top: 0;
+}
+
+.text-center > .section-title + .section-desc {
+  margin-bottom: clamp(1.25rem, 3vw, 1.85rem);
 }
 
 .bg-darker {
   background: linear-gradient(180deg, rgba(4, 13, 26, 0.35) 0%, transparent 100%);
+}
+
+/* Faixa de logos: menos altura que uma secção normal */
+.section--compact {
+  padding-block: clamp(1.5rem, 3vw, 2rem);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  overflow: hidden;
+}
+
+.carousel-lead {
+  color: var(--kp-muted);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 1.25rem;
 }
 
 /* GRIDS */
@@ -187,7 +296,7 @@ section {
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.15rem;
+  gap: 1.35rem;
 }
 
 .card,
@@ -384,6 +493,22 @@ section {
 
 .map-container iframe {
   min-height: 280px;
+}
+
+.cta-footer {
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+.crea-seal {
+  color: var(--kp-muted);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: clamp(2rem, 5vw, 3rem);
+  border-top: 1px solid rgba(212, 175, 55, 0.1);
+  padding-top: clamp(1.75rem, 4vw, 2.5rem);
 }
 
 .cta-footer h2 {

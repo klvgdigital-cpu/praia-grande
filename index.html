@@ -11,14 +11,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="https://kportasdeenrolar.com.br/" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 <body>
 
-  <!-- Header -->
   <header>
     <div class="container header-container">
       <a href="/" class="logo" aria-label="K Portas Home">
-        <img src="logo-transparente-kportas-svg.svg" class="header-logo" alt="K Portas">
+        <img src="logo-transparente-kportas-svg.svg" style="height: 50px !important; width: auto !important; display: block;" class="logo-site" alt="K Portas">
       </a>
       <nav>
         <ul class="nav-links">
@@ -28,73 +29,715 @@
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </nav>
+      <div class="mobile-menu-icon" style="display: none;">
+        <i class="fa-solid fa-bars" style="color: #F5F5F5; font-size: 1.5rem;"></i>
+      </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
     <div class="container text-center hero-content">
       <div style="display: inline-block; margin-bottom: 20px; padding: 8px 20px; background-color: rgba(212,175,55,0.1); border: 1px solid #D4AF37; border-radius: 50px;">
         <span style="color: #D4AF37; font-weight: 600; font-size: 0.9rem; font-family: 'Montserrat', sans-serif;">
-          <i class="fa-solid fa-certificate"></i> Empresa com Responsabilidade Técnica - Registro CREA-SP
+          <i class="fa-solid fa-certificate" style="margin-right: 5px;"></i> Empresa com Responsabilidade Técnica - Registro CREA-SP
         </span>
       </div>
       <h1><span style="color: #D4AF37;">Fábrica</span> de Portas de Enrolar Automáticas e Manuais</h1>
       <p class="subtitle">Fabricação própria com selo de qualidade K Portas®. Atendimento técnico especializado para Shoppings, Galpões Logísticos e Comércios de Rua.</p>
       
       <div style="display: flex; justify-content: center; margin-bottom: 35px;">
-        <div style="background: linear-gradient(135deg, #F9E28B 0%, #D4AF37 45%, #9E7A1C 80%, #F9E28B 100%); width: 150px; height: 150px; border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 15px 35px rgba(0,0,0,0.6), inset 0 0 15px rgba(255,255,255,0.4); border: 5px double #061020;">
-          <i class="fa-solid fa-medal" style="color: #061020; font-size: 2rem; margin-bottom: 5px;"></i>
-          <span style="color: #061020; font-weight: 900; font-size: 1.45rem; line-height: 1;">12 MESES</span>
-          <span style="color: #061020; font-weight: 800; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; text-align: center;">Garantia<br>Total</span>
+        <div title="Qualidade K Portas®: Cobertura total contra defeitos de fabricação e instalação por 1 ano." style="background: linear-gradient(135deg, #F9E28B 0%, #D4AF37 45%, #9E7A1C 80%, #F9E28B 100%); width: 150px; height: 150px; border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 15px 35px rgba(0,0,0,0.6), inset 0 0 15px rgba(255,255,255,0.4); border: 5px double #061020; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+          <i class="fa-solid fa-medal" style="color: #061020; font-size: 2rem; margin-bottom: 5px; filter: drop-shadow(0 2px 2px rgba(255,255,255,0.3));"></i>
+          <span style="color: #061020; font-weight: 900; font-size: 1.45rem; line-height: 1; font-family: 'Montserrat', sans-serif; text-shadow: 0 1px 1px rgba(255,255,255,0.5);">12 MESES</span>
+          <span style="color: #061020; font-weight: 800; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; text-shadow: 0 1px 1px rgba(255,255,255,0.4); text-align: center;">Garantia<br>Total</span>
         </div>
       </div>
       
       <div class="cta-group mt-4">
-        <a href="https://wa.me/5511993123964" target="_blank" class="btn btn-primary">
+        <a href="https://wa.me/5511993123964" target="_blank" class="btn btn-primary" aria-label="Falar no WhatsApp para solicitar orçamento">
           <i class="fa-brands fa-whatsapp"></i> Solicitar Orçamento pelo WhatsApp
         </a>
-        <a href="https://wa.me/5511993123964" target="_blank" class="btn btn-secondary">
+        <a href="https://wa.me/5511993123964?text=Olá%20K%20Portas,%20gostaria%20de%20solicitar%20um%20orçamento%20direto%20da%20fábrica." target="_blank" class="btn btn-secondary" aria-label="Solicitar Orçamento direto da Fábrica Comercial">
           Solicitar Orçamento direto da Fábrica
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Banner de Autoridade -->
   <div style="background-color: #061020; padding: 25px 5%; border-top: 1px solid rgba(212, 175, 55, 0.2); border-bottom: 1px solid rgba(212, 175, 55, 0.2); display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; text-transform: uppercase;">
-    <span style="color: #A0AAB5; font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; gap: 10px;"><i class="fa-solid fa-registered" style="color: #D4AF37;"></i> Marca Registrada®</span>
-    <span style="color: #A0AAB5; font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; gap: 10px;"><i class="fa-solid fa-shield-halved" style="color: #D4AF37;"></i> Engenharia CREA-SP</span>
-    <span style="color: #A0AAB5; font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; gap: 10px;"><i class="fa-solid fa-medal" style="color: #D4AF37;"></i> Selo 12 Meses Garantia</span>
+    <span style="color: #A0AAB5; font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; gap: 10px; letter-spacing: 1px;"><i class="fa-solid fa-registered" style="color: #D4AF37; font-size: 1.2rem;"></i> Marca Registrada®</span>
+    <span style="color: #A0AAB5; font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; gap: 10px; letter-spacing: 1px;"><i class="fa-solid fa-shield-halved" style="color: #D4AF37; font-size: 1.2rem;"></i> Engenharia CREA-SP</span>
+    <span style="color: #A0AAB5; font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; gap: 10px; letter-spacing: 1px;"><i class="fa-solid fa-medal" style="color: #D4AF37; font-size: 1.2rem;"></i> Selo 12 Meses Garantia</span>
   </div>
 
-  <!-- Carrossel de Logos -->
-  <section id="autoridade" class="bg-darker" style="padding: 40px 0; overflow: hidden;">
+  <section id="autoridade" class="bg-darker" style="padding: 40px 0; border-bottom: 1px solid rgba(212, 175, 55, 0.1); overflow: hidden;">
     <div class="container text-center">
       <p style="color: #A0AAB5; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px;">Empresas que confiam na engenharia da K Portas</p>
     </div>
     <div class="carousel-container">
       <div class="carousel-track">
-        <h4 class="carousel-logo">CATARINA</h4><h4 class="carousel-logo">IGUATEMI</h4><h4 class="carousel-logo">POLÍCIA MILITAR</h4><h4 class="carousel-logo">RAÍZEN</h4><h4 class="carousel-logo">ATACADÃO</h4><h4 class="carousel-logo">LEROY MERLIN</h4>
-        <h4 class="carousel-logo">CATARINA</h4><h4 class="carousel-logo">IGUATEMI</h4><h4 class="carousel-logo">POLÍCIA MILITAR</h4><h4 class="carousel-logo">RAÍZEN</h4><h4 class="carousel-logo">ATACADÃO</h4><h4 class="carousel-logo">LEROY MERLIN</h4>
+        <h4 class="carousel-logo">CATARINA</h4>
+        <h4 class="carousel-logo">IGUATEMI</h4>
+        <h4 class="carousel-logo">POLÍCIA MILITAR</h4>
+        <h4 class="carousel-logo">RAÍZEN</h4>
+        <h4 class="carousel-logo">ATACADÃO</h4>
+        <h4 class="carousel-logo">LEROY MERLIN</h4>
+        <h4 class="carousel-logo">CATARINA</h4>
+        <h4 class="carousel-logo">IGUATEMI</h4>
+        <h4 class="carousel-logo">POLÍCIA MILITAR</h4>
+        <h4 class="carousel-logo">RAÍZEN</h4>
+        <h4 class="carousel-logo">ATACADÃO</h4>
+        <h4 class="carousel-logo">LEROY MERLIN</h4>
       </div>
     </div>
   </section>
 
-  <!-- Diferencial -->
-  <section id="diferencial">
+  <section id="diferencial" style="padding-bottom: 40px;">
     <div class="container text-center">
       <h2 class="section-title">O Diferencial K Portas</h2>
+      <p class="section-desc">A Segurança que Construtoras e Grandes Lojas Exigem.</p>
+      
       <div class="differentials-grid mt-4">
         <div class="card">
-          <i class="fa-solid fa-hard-hat card-icon"></i>
+          <img src="https://placehold.co/500x300/0A192F/D4AF37?text=Foto:+Acompanhamento+Técnico" alt="Engenharia CREA inspecionando porta de aço de enrolar estrutural" loading="lazy" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 20px; border: 1px solid rgba(212,175,55,0.2);">
           <h3>Engenharia (ART)</h3>
           <p>Acompanhamento técnico exclusivo garantindo a precisão legal e estrutural da sua obra de ponta a ponta.</p>
         </div>
         <div class="card">
-          <i class="fa-solid fa-medal card-icon"></i>
+          <i class="fa-solid fa-medal card-icon" style="font-weight: 400;"></i>
           <h3>Garantia de 1 Ano</h3>
           <p>Tranquilidade total em peças e serviços de manutenção com a chancela de fábrica K Portas®.</p>
         </div>
         <div class="card">
-          <i class="fa-solid
+          <i class="fa-solid fa-truck-fast card-icon" style="font-weight: 400;"></i>
+          <h3>Logística Nacional</h3>
+          <p>Atendimento FOB rápido e inteligente, entregando kits montados para todo o território brasileiro.</p>
+        </div>
+        <div class="card">
+          <img src="https://placehold.co/500x300/0A192F/D4AF37?text=Foto:+Barra+Antivento" alt="Barra Antivento e reforços para porta de aço automática" loading="lazy" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 20px; border: 1px solid rgba(212,175,55,0.2);">
+          <h3>Reforço Corta-Vento</h3>
+          <p>Mecanismos robustos anti-descarrilamento, vitais para grandes vãos industriais e regiões litorâneas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="produtos" style="padding-top: 40px;">
+    <div class="container">
+      <h2 class="section-title text-center">Nossas Soluções</h2>
+      <div class="products-grid mt-4">
+        
+        <div class="product-card">
+          <div class="product-img-placeholder">
+            <i class="fa-solid fa-store" style="font-size: 3rem; color: #D4AF37;"></i>
+          </div>
+          <div class="product-info">
+            <h3>Portões Industriais para Galpões</h3>
+            <p>Robusteza máxima com aço espesso, perfeito para alto fluxo de docas e áreas logísticas.</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-placeholder">
+            <i class="fa-solid fa-shop" style="font-size: 3rem; color: #D4AF37;"></i>
+          </div>
+          <div class="product-info">
+            <h3>Portas Transvision para Shopping</h3>
+            <p>Visibilidade e sofisticação para vitrines de alto luxo, com ventilação e design refinado no período noturno.</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-placeholder" style="background: transparent; height: auto; border:none; padding: 15px 15px 0 15px;">
+            <img src="https://placehold.co/600x350/0A192F/D4AF37?text=Foto:+Motor+Alta+Performance" alt="Motor de Alto Fluxo e automatizador para porta de aço" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(212,175,55,0.2);">
+          </div>
+          <div class="product-info">
+            <h3>Motores de Alto Fluxo</h3>
+            <p>Motores de Fluxo Convencional (comercial) e Alto Fluxo (industrial/logístico) desenvolvidos para suportar grandes volumes de acionamentos. Trabalhamos com <strong style="color: #D4AF37;">motor industrial de alto fluxo</strong> com nobreak de máxima confiabilidade.</p>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-img-placeholder">
+            <i class="fa-solid fa-mobile-screen-button" style="font-size: 3rem; color: #D4AF37;"></i>
+          </div>
+          <div class="product-info">
+            <h3>Automação Smart IoT</h3>
+            <p>Integração digital absoluta. Controle o motor, defina permissões de acesso e agende a abertura da sua porta através da tela do seu Smartphone.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-5" style="border: 1px solid rgba(212, 175, 55, 0.3); background-color: #112240; border-radius: 12px; padding: 45px 30px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+        <div style="flex: 1; min-width: 320px; text-align: left;">
+          <div style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+            <span style="background-color: rgba(212,175,55,0.1); color: #D4AF37; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-certificate"></i> Engenharia CREA-SP</span>
+            <span style="background-color: rgba(212,175,55,0.1); color: #D4AF37; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-shield-halved"></i> Aço 100% Galvanizado</span>
+          </div>
+          <h3 style="color: #F5F5F5; font-size: clamp(1.6rem, 3vw, 2.0rem); margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">Porta de Enrolar Manual (Porta de Bar)</h3>
+          <p style="color: #E0E0E0; font-size: 1.05rem; line-height: 1.6; margin-bottom: 20px;">
+            A solução clássica e robusta para comércios de rua. Fabricação própria em aço galvanizado com sistema de molas reforçadas.
+          </p>
+          <div style="background-color: rgba(212,175,55,0.08); border-left: 4px solid #D4AF37; padding: 18px; border-radius: 0 8px 8px 0; margin-bottom: 25px;">
+            <p style="color: #E0E0E0; margin: 0; font-size: 0.95rem; font-weight: 500; line-height: 1.5;">
+              <strong style="color: #D4AF37; font-family: 'Montserrat', sans-serif;">Dica de Engenharia:</strong> Confira nossas condições para automatização. Mais conforto e segurança brutal para o seu dia a dia!
+            </p>
+          </div>
+          <a href="https://wa.me/5511993123964?text=Olá%20K%20Portas,%20gostaria%20de%20um%20orçamento%20para%20porta%20de%20enrolar%20manual%20e%20conhecer%20as%20vantagens%20da%20automática." target="_blank" class="btn btn-secondary" style="padding: 15px 30px; font-size: 1.05rem; font-weight: 600;">
+            <i class="fa-brands fa-whatsapp" style="margin-right: 5px;"></i> Orçamento para Porta Manual
+          </a>
+        </div>
+        <div style="flex: 1; min-width: 300px; display: flex; justify-content: flex-end;">
+          <div style="background-color: #0A192F; border: 1px dashed rgba(212, 175, 55, 0.4); border-radius: 12px; height: 320px; width: 100%; max-width: 450px; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: border-color 0.3s ease;">
+             <i class="fa-solid fa-shop" style="font-size: 5rem; color: rgba(212, 175, 55, 0.3); margin-bottom: 20px;"></i>
+             <span style="color: #A0AAB5; font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 600; letter-spacing: 1px;">Modelo Porta de Bar</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-showcase mt-5" style="background: linear-gradient(135deg, #0A192F 0%, #112240 100%); border: 1px solid rgba(212, 175, 55, 0.4); border-radius: 12px; padding: 50px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 50px; box-shadow: inset 0 0 50px rgba(0,0,0,0.5), 0 15px 40px rgba(0,0,0,0.4);">
+        
+        <div class="video-container" style="flex: 1; min-width: 320px; border-radius: 16px; overflow: hidden; position: relative; border: 2px solid rgba(212, 175, 55, 0.6); box-shadow: 0 15px 35px rgba(0,0,0,0.8); aspect-ratio: 16/9; background: url('https://images.unsplash.com/photo-1558089687-f282ffcbc126?auto=format&fit=crop&q=80&w=1000') center/cover no-repeat;">
+          <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(10, 25, 47, 0.8); display: flex; justify-content: center; align-items: center;">
+            <div style="width: 80px; height: 80px; background-color: rgba(212, 175, 55, 0.9); border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+              <i class="fa-solid fa-play" style="color: #061020; font-size: 2rem; margin-left: 5px;"></i>
+            </div>
+          </div>
+        </div>
+
+        <div style="flex: 1; min-width: 320px; text-align: left;">
+          <span style="color: #A0AAB5; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;"><i class="fa-solid fa-mobile-screen-button" style="margin-right: 5px; color: #D4AF37;"></i> K Portas Smart</span>
+          <h3 style="color: #F5F5F5; font-size: clamp(2.0rem, 3.5vw, 2.5rem); margin-top: 10px; margin-bottom: 20px; font-family: 'Montserrat', sans-serif; line-height: 1.2;">
+            <span style="color: #D4AF37;">Sua Porta de Aço</span> na Palma da Mão
+          </h3>
+          <p style="color: #E0E0E0; font-size: 1.15rem; font-style: italic; font-weight: 500; border-left: 3px solid #D4AF37; padding-left: 15px; margin-bottom: 30px;">
+            "Transforme sua porta automática em um sistema inteligente. Compatível com nossa linha industrial, comercial e residencial."
+          </p>
+          
+          <div style="display: grid; grid-template-columns: 1fr; gap: 15px; margin-bottom: 35px;">
+            <div style="display: flex; align-items: flex-start;">
+              <i class="fa-solid fa-wifi" style="color: #D4AF37; font-size: 1.2rem; margin-top: 5px; min-width: 30px;"></i>
+              <div>
+                <strong style="color: #F5F5F5; font-family: 'Montserrat', sans-serif;">Controle Remoto Wi-Fi:</strong>
+                <span style="color: #A0AAB5; display: block; font-size: 0.95rem;">Abra e feche sua porta de qualquer lugar do mundo pelo celular.</span>
+              </div>
+            </div>
+            <div style="display: flex; align-items: flex-start;">
+              <i class="fa-solid fa-user-shield" style="color: #D4AF37; font-size: 1.2rem; margin-top: 5px; min-width: 30px;"></i>
+              <div>
+                <strong style="color: #F5F5F5; font-family: 'Montserrat', sans-serif;">Gestão de Acessos:</strong>
+                <span style="color: #A0AAB5; display: block; font-size: 0.95rem;">Saiba exatamente quem e quando a porta foi acionada (Tempo Real).</span>
+              </div>
+            </div>
+            <div style="display: flex; align-items: flex-start;">
+              <i class="fa-regular fa-clock" style="color: #D4AF37; font-size: 1.2rem; margin-top: 5px; min-width: 30px;"></i>
+              <div>
+                <strong style="color: #F5F5F5; font-family: 'Montserrat', sans-serif;">Agendamento Inteligente:</strong>
+                <span style="color: #A0AAB5; display: block; font-size: 0.95rem;">Programe horários automáticos para sua empresa ou condomínio.</span>
+              </div>
+            </div>
+            <div style="display: flex; align-items: flex-start;">
+              <i class="fa-solid fa-ban" style="color: #D4AF37; font-size: 1.2rem; margin-top: 5px; min-width: 30px;"></i>
+              <div>
+                <strong style="color: #F5F5F5; font-family: 'Montserrat', sans-serif;">Adeus aos Controles:</strong>
+                <span style="color: #A0AAB5; display: block; font-size: 0.95rem;">Elimine o custo com pilhas e a perda de controles convencionais.</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/5511993123964?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20sistema%20de%20controle%20por%20smartphone%20da%20K%20Portas" target="_blank" class="btn btn-secondary" style="padding: 18px 35px; font-size: 1.1rem; text-transform: uppercase; font-weight: 700; width: 100%;">
+            <i class="fa-solid fa-mobile-screen-button" style="margin-right: 8px;"></i> Quero minha Porta Inteligente
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="manutencao" style="border-top: 1px solid rgba(212, 175, 55, 0.1);">
+    <div class="container text-center">
+      <h2 class="section-title">Manutenção Preventiva e Corretiva</h2>
+      <p class="section-desc" style="max-width: 800px; margin: 0 auto; color: #E0E0E0;">
+        Serviços executados sob supervisão técnica, garantindo a segurança operacional do seu imóvel.
+      </p>
+      
+      <div class="differentials-grid mt-4">
+        <div class="card text-center" style="border: 1px solid rgba(212, 175, 55, 0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.3);">
+          <i class="fa-solid fa-clipboard-check card-icon" style="font-size: 2.5rem; margin-bottom: 15px;"></i>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Manutenção Preventiva</h3>
+          <p>Evite paradas inesperadas com planos de revisão técnica periódica, lubrificação e ajuste de motores.</p>
+        </div>
+        
+        <div class="card text-center" style="border: 1px solid rgba(212, 175, 55, 0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.3);">
+          <i class="fa-solid fa-screwdriver-wrench card-icon" style="font-size: 2.5rem; margin-bottom: 15px;"></i>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Manutenção Corretiva</h3>
+          <p>Atendimento ágil para reparos emergenciais, troca de molas, lâminas e componentes eletrônicos.</p>
+        </div>
+      </div>
+      
+      <div class="cta-group mt-5" style="display: flex; justify-content: center;">
+        <a href="https://wa.me/5511993123964?text=Olá%20K%20Portas,%20gostaria%20de%20solicitar%20Assistência%20Técnica." target="_blank" class="btn btn-primary" style="padding: 16px 40px; font-size: 1.15rem; font-weight: 700; text-transform: uppercase;">
+          <i class="fa-solid fa-headset" style="margin-right: 8px;"></i> Solicitar Assistência Técnica
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="personalizacao" class="bg-darker" style="border-top: 1px solid rgba(212, 175, 55, 0.1);">
+    <div class="container text-center">
+      <h2 class="section-title">Personalização Profissional</h2>
+      <p class="section-desc" style="max-width: 800px; margin: 0 auto; color: #E0E0E0;">
+        Nossas portas são entregues completas e personalizadas para o seu projeto, desde o acabamento estético até as normas de segurança obrigatórias.
+      </p>
+      
+      <div class="differentials-grid mt-4">
+        <div class="card text-center">
+          <i class="fa-solid fa-spray-can card-icon"></i>
+          <h3 style="font-size: 1.3rem;">Pintura Eletrostática (Alta Durabilidade contra Maresia)</h3>
+          <p>Acabamento premium com alta durabilidade e resistência à corrosão. Diversas cores disponíveis.</p>
+        </div>
+        <div class="card text-center">
+          <i class="fa-solid fa-door-open card-icon"></i>
+          <h3 style="font-size: 1.3rem;">Portinhola e Alçapão</h3>
+          <p>Soluções de acesso social e emergência integradas à estrutura da porta, com segurança reforçada.</p>
+        </div>
+        <div class="card text-center">
+          <i class="fa-solid fa-clipboard-check card-icon"></i>
+          <h3 style="font-size: 1.3rem;">Segurança e SSMA</h3>
+          <p>Fabricação e parametrização com garantia de conformidade técnica ativa nas NRs 10, 12 e 35.</p>
+        </div>
+        <div class="card text-center">
+          <i class="fa-solid fa-wind card-icon"></i>
+          <h3 style="font-size: 1.3rem;">Sistema de Proteção Corta-Vento</h3>
+          <p>Reforço estrutural com barras e travas específicas para locais descampados ou com alta incidência de ventos, garantindo a estabilidade da porta. Exija uma <strong style="color: #A0AAB5;">porta de aço reforçada contra vento</strong> com rígida <strong style="color: #A0AAB5;">trava antivento para porta de enrolar</strong>.</p>
+        </div>
+        <div class="card text-center">
+          <i class="fa-solid fa-layer-group card-icon"></i>
+          <h3 style="font-size: 1.3rem;">Versatilidade de Lâminas</h3>
+          <p><strong style="color:#D4AF37;">Personalização Total:</strong> Escolha entre lâminas fechadas, transvision (microperfuradas) ou vazadas, todas compatíveis com nossos sistemas de reforço estrutural.</p>
+        </div>
+      </div>
+      
+      <div class="text-center mt-5" style="margin-top: 50px;">
+        <a href="https://wa.me/5511993123964?text=Olá%20Engenharia%20K%20Portas,%20preciso%20de%20ajuda%20para%20especificar%20o%20reforço%20e%20motor%20do%20meu%20projeto." target="_blank" class="btn btn-secondary" style="padding: 16px 35px; font-size: 1.05rem; border-width: 2px; font-weight: 700;">
+          <i class="fa-solid fa-hard-hat" style="margin-right: 8px;"></i> Consulte nossa engenharia para definir o kit de reforço e motor ideal
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="revenda" style="position: relative; overflow: hidden; border-top: 1px solid rgba(212, 175, 55, 0.1);">
+    <div class="container">
+      <div class="text-center" style="max-width: 1200px; margin: 0 auto 50px; width: 100%;">
+        <div style="display: inline-block; margin-bottom: 20px; padding: 6px 15px; background-color: rgba(212,175,55,0.1); border: 1px solid #D4AF37; border-radius: 30px;">
+          <span style="color: #D4AF37; font-weight: 600; font-size: 0.85rem; font-family: 'Montserrat', sans-serif;">
+            <i class="fa-solid fa-shield-halved" style="margin-right: 5px;"></i> Aço 100% Galvanizado Certificado
+          </span>
+        </div>
+        <h2 class="section-title" style="font-size: clamp(1.4rem, 2.5vw, 2.0rem);">Fábrica e Distribuição de Materiais para Portas de Aço de Enrolar</h2>
+        <p class="section-desc" style="color: #F5F5F5; font-weight: 500;">
+          Soluções completas com estoque à pronta entrega para serralherias e construtoras.
+        </p>
+        
+        <div style="background-color: rgba(212,175,55,0.05); border: 1px dashed rgba(212,175,55,0.5); border-radius: 8px; padding: 20px 25px; display: inline-flex; align-items: flex-start; gap: 15px; margin-top: 10px; margin-bottom: 35px; max-width: 850px; text-align: left;">
+          <i class="fa-solid fa-truck-fast" style="color: #D4AF37; font-size: 1.8rem; margin-top: 5px;"></i>
+          <div>
+            <strong style="color: #F5F5F5; display: block; font-family: 'Montserrat', sans-serif; margin-bottom: 5px; font-size: 1.05rem;">Atendimento Nacional: Venda de Materiais e Kits para todo o Brasil.</strong>
+            <span style="color: #A0AAB5; font-size: 0.95rem; line-height: 1.5; display: block;">Modalidade FOB (Coleta via transportadora contratada pelo cliente em nossa fábrica em SP).</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="differentials-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px;">
+        <div class="card text-center" style="padding: 30px;">
+          <i class="fa-solid fa-boxes-packing card-icon"></i>
+          <h3 style="font-size: 1.2rem;">Kits de Montagem (Kit Serralheiro)</h3>
+          <p style="font-size: 0.95rem;">A solução completa e prática para o profissional. Kit sob medida com lâminas, guias, eixo e acessórios, pronto para a instalação.</p>
+        </div>
+        <div class="card text-center" style="padding: 30px;">
+          <i class="fa-solid fa-microchip card-icon"></i>
+          <h3 style="font-size: 1.2rem;">Motores e Automatizadores</h3>
+          <p style="font-size: 0.95rem;">Tecnologia de alta performance, potência e eficiência energética.</p>
+        </div>
+        <div class="card text-center" style="padding: 30px;">
+          <i class="fa-solid fa-layer-group card-icon"></i>
+          <h3 style="font-size: 1.2rem;">Lâminas e Perfis</h3>
+          <p style="font-size: 0.95rem;">Aço galvanizado de alta resistência (Transvision e Fechada).</p>
+        </div>
+        <div class="card text-center" style="padding: 30px;">
+          <i class="fa-solid fa-compact-disc card-icon"></i>
+          <h3 style="font-size: 1.2rem;">Acessórios</h3>
+          <p style="font-size: 0.95rem;">Controles, centrais de comando, antiquedas e travas de segurança.</p>
+        </div>
+        <div class="card text-center" style="padding: 30px;">
+          <i class="fa-solid fa-spray-can card-icon"></i>
+          <h3 style="font-size: 1.2rem;">Pintura Eletrostática</h3>
+          <p style="font-size: 0.95rem;">Acabamento premium com alta durabilidade e resistência à corrosão (Maresia). Diversas cores disponíveis.</p>
+        </div>
+        <div class="card text-center" style="padding: 30px;">
+          <i class="fa-solid fa-gear card-icon"></i>
+          <h3 style="font-size: 1.2rem;">Eixos e Guias Estruturais</h3>
+          <p style="font-size: 0.95rem;">Eixos tubulares, guias laterais e soleiras reforçadas em aço galvanizado sob medida.</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-4" style="margin-top: 40px;">
+        <div style="background-color: #112240; display: inline-block; padding: 15px 30px; border-radius: 8px; border: 1px dashed rgba(212, 175, 55, 0.5); margin-bottom: 30px; max-width: 900px;">
+          <h4 style="color: #F5F5F5; font-weight: 600; font-size: 1.1rem; margin: 0; line-height: 1.5;">
+            Consultoria técnica e venda de materiais com ou sem instalação. Orçamentos sob medida para o seu projeto.
+          </h4>
+        </div>
+        <br>
+        <a href="https://wa.me/5511993123964?text=Olá%20K%20Portas®,%20sou%20profissional%20da%20área%20e%20gostaria%20de%20consultar%20o%20preço%20diferenciado%20para%20parceiros." target="_blank" class="btn btn-secondary" style="border-width: 2px; font-weight: 700; font-size: 1.05rem;" title="Consultar Preço Diferenciado">
+          <i class="fa-solid fa-handshake" style="margin-right: 5px;"></i> Cresça com a K Portas® - Seja um Revendedor
+        </a>
+        <p style="color: #D4AF37; font-size: 0.95rem; font-weight: 600; margin-top: 15px; letter-spacing: 0.5px;"><i class="fa-solid fa-rocket" style="margin-right: 5px;"></i> Projeto de Expansão 2026: Ampliando nossa capacidade produtiva para atender todo o Brasil.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="area-de-atendimento" class="bg-darker">
+    <div class="container text-center">
+      <h2 class="section-title">Atendimento Especializado em toda Grande SP e Interior</h2>
+      <p class="section-desc">Logística ágil e equipes prontas para grandes obras em toda a malha paulista.</p>
+      
+      <ul class="cities-list mt-4">
+        <li>Capital e Grande SP (ABC)</li>
+        <li>Baixada Santista e Litoral Sul</li>
+        <li>Litoral Norte</li>
+        <li>Campinas e Região</li>
+        <li>Sorocaba</li>
+        <li>Ribeirão Preto</li>
+        <li>Barueri e Alphaville</li>
+        <li>Jundiaí e Região</li>
+        <li>Vale do Paraíba (SJC)</li>
+      </ul>
+      <p style="color: #D4AF37; font-weight: 600; font-size: 1.1rem; margin-top: 35px; line-height: 1.6;">
+        Logística própria preparada para atender desde o Interior até as regiões litorâneas com agilidade e segurança.
+      </p>
+    </div>
+  </section>
+
+  <section id="portfolio" style="padding: 80px 0; border-top: 1px dashed rgba(212, 175, 55, 0.2);">
+    <div class="container text-center">
+      <h2 class="section-title">Projetos Realizados em todo o Estado</h2>
+      <p class="section-desc" style="margin-bottom: 50px;">Galeria de instalações técnicas, provando nossa capacidade executiva nas maiores obras paulistas.</p>
+      
+      <div class="differentials-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+        <div style="text-align: center;">
+          <img src="https://placehold.co/600x400/112240/D4AF37?text=Foto:+Obra+Destaque" alt="Instalação de Porta de Aço Automática em Galpão Logístico - K Portas®" loading="lazy" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.5); margin-bottom: 15px;">
+          <p style="color: #D4AF37; font-weight: 600; font-family: 'Montserrat', sans-serif;">Instalação Industrial - Jundiaí</p>
+        </div>
+        <div style="text-align: center;">
+          <img src="https://placehold.co/600x400/112240/D4AF37?text=Foto:+Comércio" alt="Instalação de Porta de Enrolar Manual para Comércio com Pintura Eletrostática" loading="lazy" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.5); margin-bottom: 15px;">
+          <p style="color: #D4AF37; font-weight: 600; font-family: 'Montserrat', sans-serif;">Comércio com Pintura Eletrostática</p>
+        </div>
+        <div style="text-align: center;">
+          <img src="https://placehold.co/600x400/112240/D4AF37?text=Foto:+Manutenção" alt="Manutenção Especializada em Portas de Aço Automáticas K Portas®" loading="lazy" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.5); margin-bottom: 15px;">
+          <p style="color: #D4AF37; font-weight: 600; font-family: 'Montserrat', sans-serif;">Manutenção Especializada - Capital</p>
+        </div>
+        <div style="text-align: center;">
+          <img src="https://placehold.co/600x400/112240/D4AF37?text=Foto:+Transvision" alt="Porta de Enrolar Transvision Automática para Shopping" loading="lazy" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.5); margin-bottom: 15px;">
+          <p style="color: #D4AF37; font-weight: 600; font-family: 'Montserrat', sans-serif;">Porta Transvision - Shopping SP</p>
+        </div>
+        <div style="text-align: center;">
+          <img src="https://placehold.co/600x400/112240/D4AF37?text=Foto:+Projeto+Litoral" alt="Porta de Aço Automática Instalada sob Medida" loading="lazy" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.5); margin-bottom: 15px;">
+          <p style="color: #D4AF37; font-weight: 600; font-family: 'Montserrat', sans-serif;">Projeto sob Medida - Litoral</p>
+        </div>
+        <div style="text-align: center;">
+          <img src="https://placehold.co/600x400/112240/D4AF37?text=Foto:+Kit+Serralheiro" alt="Kit para Serralheiro K Portas de Alta Resistência" loading="lazy" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.5); margin-bottom: 15px;">
+          <p style="color: #D4AF37; font-weight: 600; font-family: 'Montserrat', sans-serif;">Kit Serralheiro - Interior</p>
+        </div>
+      </div>
+      
+      <div style="margin-top: 60px; padding-top: 30px; border-top: 1px solid rgba(212, 175, 55, 0.5); display: inline-block; text-align: center; max-width: 900px;">
+        <p style="color: #F5F5F5; font-size: 1.15rem; font-family: 'Montserrat', sans-serif; font-weight: 600; margin: 0 0 15px 0;">
+          <i class="fa-solid fa-truck-fast" style="color: #D4AF37; margin-right: 8px;"></i> Fabricação Própria com Agilidade e Logística Otimizada para todo o estado de SP.
+        </p>
+        <div style="background-color: rgba(212,175,55,0.08); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 8px; padding: 20px; text-align: left;">
+          <p style="color: #A0AAB5; font-size: 1.05rem; line-height: 1.6; margin: 0;">
+            <strong style="color: #D4AF37; font-family: 'Montserrat', sans-serif;"><i class="fa-solid fa-clipboard-check" style="margin-right: 5px;"></i> Nosso Diferencial:</strong> Visita Técnica de Conferência após o fechamento do pedido. Realizamos a medição fina e consultoria no local antes de iniciar a fabricação, garantindo 100% de precisão e segurança. <strong style="color: #E0E0E0;">Medição e conferência técnica acompanhada por nossa engenharia.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="seguranca-ssma" style="border-top: 1px dashed rgba(212, 175, 55, 0.2);">
+    <div class="container text-center">
+      <h2 class="section-title">Segurança e Certificações Técnicas</h2>
+      <p class="section-desc" style="max-width: 850px; margin: 0 auto; color: #E0E0E0; font-size: 1.1rem; line-height: 1.6;">
+        Nossa equipe é periodicamente treinada e certificada, garantindo total conformidade com as normas de SSMA para atuar em obras de engenharia, indústrias e condomínios com segurança máxima.
+      </p>
+      
+      <div class="differentials-grid mt-4" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-top: 50px;">
+        <div class="card text-center" style="border: 1px solid rgba(212, 175, 55, 0.4); box-shadow: 0 10px 25px rgba(0,0,0,0.3);">
+          <i class="fa-solid fa-helmet-safety card-icon"></i>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">NR-35</h3>
+          <p>Especialistas em Trabalho em Altura.</p>
+        </div>
+        <div class="card text-center" style="border: 1px solid rgba(212, 175, 55, 0.4); box-shadow: 0 10px 25px rgba(0,0,0,0.3);">
+          <i class="fa-solid fa-vest card-icon"></i>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">NR-06</h3>
+          <p>Uso rigoroso de EPIs e proteção individual em todas as etapas.</p>
+        </div>
+        <div class="card text-center" style="border: 1px solid rgba(212, 175, 55, 0.4); box-shadow: 0 10px 25px rgba(0,0,0,0.3);">
+          <i class="fa-solid fa-shield-halved card-icon"></i>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px;">NR-12</h3>
+          <p>Conformidade em Máquinas e Equipamentos.</p>
+        </div>
+      </div>
+      
+      <div class="text-center mt-5" style="margin-top: 50px;">
+        <a href="https://wa.me/5511993123964?text=Olá,%20gostaria%20de%20solicitar%20uma%20Prévia%20Orçamento%20Técnico%20Gratuito." target="_blank" class="btn btn-primary" style="padding: 18px 40px; font-size: 1.15rem; text-transform: uppercase; font-weight: 800; letter-spacing: 0.5px; box-shadow: 0 10px 25px rgba(212,175,55,0.4);">
+          <i class="fa-solid fa-file-signature" style="margin-right: 8px;"></i> Solicitar Prévia Orçamento Técnico Gratuito
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: linear-gradient(90deg, rgba(212,175,55,0.95) 0%, rgba(184,150,38,0.95) 100%); padding: 50px 0; border-top: 2px solid #061020; border-bottom: 2px solid #061020;">
+    <div class="container text-center" style="max-width: 900px;">
+      <h2 style="color: #061020; font-family: 'Montserrat', sans-serif; font-weight: 800; margin-bottom: 10px; font-size: clamp(1.8rem, 3.5vw, 2.3rem); line-height: 1.1;">Trabalha com Serralheria?</h2>
+      <p style="color: #0A192F; font-size: 1.15rem; font-weight: 700; margin-bottom: 30px;">Temos preços e prazos exclusivos para Revendedores e Parceiros.</p>
+      <a href="https://wa.me/5511993123964?text=Olá%20K%20Portas®,%20sou%20profissional%20da%20área%20e%20gostaria%20de%20consultar%20o%20preço%20diferenciado%20para%20parceiros." target="_blank" class="btn" style="background-color: #061020; color: #D4AF37; padding: 18px 45px; font-weight: 700; font-size: 1.1rem; border-radius: 8px; text-transform: uppercase; box-shadow: 0 10px 25px rgba(0,0,0,0.4); letter-spacing: 0.5px;">
+        <i class="fa-solid fa-file-invoice-dollar" style="margin-right: 8px;"></i> CONSULTAR PREÇO DIFERENCIADO
+      </a>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container" style="max-width: 900px; margin: 0 auto;">
+      <h2 class="section-title text-center">Dúvidas Frequentes sobre Portas de Enrolar</h2>
+      
+      <div class="faq-container mt-4">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Qual o prazo médio de entrega e instalação?</h4>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>A primeira etapa, após o fechamento do pedido, é a nossa <span style="color:#D4AF37; font-weight:600;">Visita Técnica de Conferência</span>. Em seguida, efetuamos a expedição com <span style="color:#D4AF37; font-weight:600;">Agilidade e Logística Otimizada</span> e instalamos em média de 3 a 7 dias úteis para a Grande SP, dependendo da complexidade do projeto e acabamento.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>A K Portas atende cidades do Interior e Litoral?</h4>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Sim! Possuímos logística própria para atender todo o estado de SP, incluindo <span style="color:#D4AF37; font-weight:600;">Interior e Litoral</span>, com equipes treinadas para instalação e assistência técnica rápida.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Vocês atendem outros estados fora de SP?</h4>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Sim! Atendemos todo o território nacional com o fornecimento de kits e materiais completos. A coleta é realizada por transportadora de preferência do cliente <span style="color:#D4AF37; font-weight:600;">(Modalidade FOB)</span> em nossa unidade fabril.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Vocês realizam manutenção de portas?</h4>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Sim, realizamos manutenção corretiva e preventiva em <span style="color:#D4AF37; font-weight:600;">portas de aço automáticas e manuais</span>, garantindo o funcionamento seguro do seu estabelecimento.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Quais são as formas de pagamento para Pessoa Física e Empresas?</h4>
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Aceitamos cartões de crédito, boleto bancário (sob consulta) e oferecemos condições especiais para faturamento direto para empresas e condomínios. <span style="color:#D4AF37; font-weight:600; display:block; margin-top: 10px;">Garantimos o melhor <strong style="color: #F5F5F5;">Preço para Serralheiro</strong> em peças e no <strong style="color: #F5F5F5;">Kit de Porta de Enrolar</strong>. Consulte nosso canal de parceiros para solicitar <strong style="color: #F5F5F5;">Faturamento para Revenda</strong> com <strong style="color: #FFF;">Condições e Preços Diferenciados para Serralheiros e Revendedores</strong>.</span></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-5" style="display: flex; flex-direction: column; align-items: center; gap: 25px;">
+        <div title="Qualidade K Portas®: Cobertura total contra defeitos de fabricação e instalação por 1 ano." style="background: linear-gradient(135deg, #F9E28B 0%, #D4AF37 45%, #9E7A1C 80%, #F9E28B 100%); width: 130px; height: 130px; border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 15px 35px rgba(0,0,0,0.6), inset 0 0 15px rgba(255,255,255,0.4); border: 4px double #061020; cursor: pointer; transition: transform 0.3s ease; margin-bottom: 10px;" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+          <i class="fa-solid fa-medal" style="color: #061020; font-size: 1.6rem; margin-bottom: 3px; filter: drop-shadow(0 2px 2px rgba(255,255,255,0.3));"></i>
+          <span style="color: #061020; font-weight: 900; font-size: 1.3rem; line-height: 1; font-family: 'Montserrat', sans-serif; text-shadow: 0 1px 1px rgba(255,255,255,0.5);">12 MESES</span>
+          <span style="color: #061020; font-weight: 800; font-size: 0.70rem; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; text-shadow: 0 1px 1px rgba(255,255,255,0.4); text-align: center;">Garantia<br>Total</span>
+        </div>
+        
+        <p style="color: #E0E0E0; font-size: 1.1rem; font-family: 'Montserrat', sans-serif; margin: 0;">Sua dúvida não está aqui? 
+          <a href="https://wa.me/5511993123964" target="_blank" style="color: #D4AF37; text-decoration: none; font-weight: 700; border-bottom: 1px solid #D4AF37; margin-left: 5px; transition: color 0.3s ease;">Fale conosco agora pelo WhatsApp</a>
+        </p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="callback" style="padding: 80px 0; border-top: 1px solid rgba(212, 175, 55, 0.1);">
+    <div class="container text-center">
+      <div style="max-width: 650px; margin: 0 auto; background-color: #0A192F; padding: 50px 30px; border-radius: 12px; border: 1px solid #D4AF37; box-shadow: 0 15px 40px rgba(0,0,0,0.6);">
+        <h2 class="section-title" style="font-size: clamp(1.8rem, 3.5vw, 2.2rem); margin-bottom: 15px;">Prefere que a gente te ligue?</h2>
+        <p style="color: #E0E0E0; margin-bottom: 35px; font-size: 1.1rem; line-height: 1.6;">Deixe seu contato para uma consultoria técnica gratuita.</p>
+        
+        <form id="callbackForm" style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
+          <input 
+            type="tel" 
+            id="callbackPhone" 
+            placeholder="(11) 90000-0000" 
+            required
+            maxlength="15"
+            style="width: 100%; max-width: 350px; padding: 18px 20px; font-size: 1.2rem; border-radius: 6px; border: 1px solid #D4AF37; background-color: #061020; color: #F5F5F5; font-family: 'Inter', sans-serif; text-align: center; outline: none; transition: border-color 0.3s ease;"
+          >
+          <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 350px; font-size: 1.1rem; letter-spacing: 1px; padding: 18px 32px;">
+            <i class="fa-solid fa-headset" style="margin-right: 8px;"></i> Falar com um Consultor Técnico
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="bg-darker" style="border-top: 1px dashed rgba(212, 175, 55, 0.2);">
+    <div class="container text-center">
+      <h2 class="section-title">O que dizem nossos clientes</h2>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 50px;">
+        <i class="fa-solid fa-star" style="color: #D4AF37; font-size: 1.2rem;"></i>
+        <i class="fa-solid fa-star" style="color: #D4AF37; font-size: 1.2rem;"></i>
+        <i class="fa-solid fa-star" style="color: #D4AF37; font-size: 1.2rem;"></i>
+        <i class="fa-solid fa-star" style="color: #D4AF37; font-size: 1.2rem;"></i>
+        <i class="fa-solid fa-star-half-stroke" style="color: #D4AF37; font-size: 1.2rem;"></i>
+        <span style="color: #E0E0E0; font-weight: 600; font-size: 1.05rem; font-family: 'Montserrat', sans-serif; margin-left: 10px;">Nota 4.9/5 estrelas no Google (163+ avaliações)</span>
+      </div>
+      
+      <div class="differentials-grid">
+        <div class="card" style="text-align: left; padding: 35px; justify-content: space-between;">
+          <div>
+            <i class="fa-solid fa-quote-left" style="color: rgba(212, 175, 55, 0.5); font-size: 2.2rem; margin-bottom: 20px; display: block;"></i>
+            <p style="font-style: italic; font-size: 1.05rem; line-height: 1.6; margin-bottom: 25px;">"Material de excelente qualidade, pontualidade na entrega e equipe de instalação muito educada. Recomendo!"</p>
+          </div>
+          <p style="color: #D4AF37; font-weight: 700; font-family: 'Montserrat', sans-serif; margin-bottom: 0;">- Renato S.</p>
+        </div>
+        <div class="card" style="text-align: left; padding: 35px; justify-content: space-between;">
+          <div>
+            <i class="fa-solid fa-quote-left" style="color: rgba(212, 175, 55, 0.5); font-size: 2.2rem; margin-bottom: 20px; display: block;"></i>
+            <p style="font-style: italic; font-size: 1.05rem; line-height: 1.6; margin-bottom: 25px;">"Fábrica de confiança. Cumpriram o prazo e a pintura eletrostática ficou impecável."</p>
+          </div>
+          <p style="color: #D4AF37; font-weight: 700; font-family: 'Montserrat', sans-serif; margin-bottom: 0;">- Cláudia R.</p>
+        </div>
+        <div class="card" style="text-align: left; padding: 35px; justify-content: space-between;">
+          <div>
+            <i class="fa-solid fa-quote-left" style="color: rgba(212, 175, 55, 0.5); font-size: 2.2rem; margin-bottom: 20px; display: block;"></i>
+            <p style="font-style: italic; font-size: 1.05rem; line-height: 1.6; margin-bottom: 25px;">"Atendimento nota 10 desde o orçamento até a entrega técnica. Preço justo pela qualidade entregue."</p>
+          </div>
+          <p style="color: #D4AF37; font-weight: 700; font-family: 'Montserrat', sans-serif; margin-bottom: 0;">- Marcos T.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato" class="footer">
+    <div class="container">
+      
+      <div class="cta-footer text-center" style="margin-bottom: 60px;">
+        <h2>Transforme a segurança da sua obra hoje.</h2>
+        <a href="https://wa.me/5511993123964" target="_blank" class="btn btn-primary mt-2">
+          <i class="fa-brands fa-whatsapp"></i> Falar com o Engenheiro
+        </a>
+      </div>
+
+      <div class="contact-grid">
+        
+        <div class="contact-info">
+          
+          <div class="contact-block">
+            <i class="fa-solid fa-phone contact-icon"></i>
+            <div>
+              <h4 style="color: #D4AF37; margin-bottom: 5px; font-family: 'Montserrat', sans-serif;">Telefones</h4>
+              <a href="tel:+551122818474" class="contact-link" style="color: #F5F5F5; text-decoration: none; font-weight: 500; display: block; margin-bottom: 5px;">Fixo: (11) 2281-8474</a>
+              <a href="https://wa.me/5511993123964" target="_blank" class="contact-link" style="color: #25D366; text-decoration: none; font-weight: 600; display: block;"><i class="fa-brands fa-whatsapp"></i> WhatsApp: (11) 99312-3964</a>
+            </div>
+          </div>
+          
+          <div class="contact-block">
+            <i class="fa-solid fa-envelope contact-icon"></i>
+            <div>
+              <h4 style="color: #D4AF37; margin-bottom: 5px; font-family: 'Montserrat', sans-serif;">Canais de Atendimento</h4>
+              <a href="mailto:vendas@kportas.com.br" class="contact-link" style="color: #F5F5F5; text-decoration: none; font-weight: 500; display: block; margin-bottom: 5px;">Comercial: vendas@kportas.com.br</a>
+              <a href="mailto:compras@kportas.com.br" class="contact-link" style="color: #A0AAB5; text-decoration: none; font-size: 0.9rem; display: block; margin-bottom: 5px;">Fornecedores: compras@kportas.com.br</a>
+              <a href="mailto:contato@kportas.com.br" class="contact-link" style="color: #A0AAB5; text-decoration: none; font-size: 0.9rem; display: block;">Administrativo: contato@kportas.com.br</a>
+            </div>
+          </div>
+
+          <div class="contact-block">
+            <i class="fa-solid fa-location-dot contact-icon"></i>
+            <address style="font-style: normal; color: #F5F5F5; line-height: 1.5; font-weight: 500;">
+              <h4 style="color: #D4AF37; margin-bottom: 5px; font-family: 'Montserrat', sans-serif;">Sede Principal</h4>
+              Rua Engenheiro Botelho Egas, 117<br>Mandaqui, São Paulo - SP<br>CEP 02416-020
+            </address>
+          </div>
+          
+          <div class="contact-block">
+            <i class="fa-solid fa-map-location-dot contact-icon"></i>
+            <div style="color: #A0AAB5; font-size: 0.85rem; line-height: 1.6;">
+              <h4 style="color: #D4AF37; margin-bottom: 5px; font-family: 'Montserrat', sans-serif;">Cobertura Logística K Portas</h4>
+              <p style="margin:0;">Principais regiões atendidas com instalação: <strong style="color: #F5F5F5;">São Paulo (Capital), Grande ABC, Guarulhos, Campinas, Sorocaba, Jundiaí, Baixada Santista e Litoral Norte.</strong></p>
+            </div>
+          </div>
+
+          <div class="contact-block">
+            <i class="fa-regular fa-clock contact-icon"></i>
+            <div style="color: #A0AAB5; font-size: 0.9rem; line-height: 1.6;">
+              <h4 style="color: #D4AF37; margin-bottom: 5px; font-family: 'Montserrat', sans-serif;">Horário de Funcionamento</h4>
+              <span style="color: #F5F5F5; font-weight: 500;">Segunda a Quinta-feira:</span> 08:00 às 18:00<br>
+              <span style="color: #F5F5F5; font-weight: 500;">Sexta-feira:</span> 08:00 às 17:00<br>
+              <span style="color: #F5F5F5; font-weight: 500;">Intervalo de Almoço:</span> 12:00 às 13:00<br>
+              <span style="color: #e74c3c; font-weight: 700; display: inline-block; margin-top: 5px; padding: 2px 6px; border: 1px solid rgba(231,76,60,0.5); border-radius: 4px; font-size: 0.8rem;">Sábado e Domingo: Fechado</span>
+            </div>
+          </div>
+          
+          <div class="social-links mt-4">
+            <a href="https://www.instagram.com/kportas_/" target="_blank" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+          
+        </div>
+
+        <div class="map-container">
+          <iframe 
+            src="https://maps.google.com/maps?q=R.%20Engenheiro%20Botelho%20Egas,%20117%20-%20Mandaqui,%20S%C3%A3o%20Paulo&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0; border-radius: 8px; min-height: 350px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        
+      </div>
+      
+      <div class="crea-seal text-center" style="color: #A0AAB5; font-size: 0.9rem; display: flex; flex-direction: column; align-items: center; gap: 15px; margin-top: 60px; border-top: 1px solid rgba(212, 175, 55, 0.1); padding-top: 40px;">
+        <img src="logo-transparente-kportas-svg.svg" style="height: 50px !important; width: auto !important; display: block; opacity: 0.8; margin-bottom: 10px;" class="logo-site" alt="K Portas">
+        <span style="border: 1px solid rgba(212, 175, 55, 0.4); padding: 8px 20px; border-radius: 30px; font-size: 0.9rem; color: #D4AF37; font-weight: 600;">
+          <i class="fa-solid fa-shield-halved"></i> Engenharia Responsável | CREA-SP
+        </span>
+        <p style="font-size: 0.85rem; margin: 20px 0 0 0; max-width: 750px; line-height: 1.7;">Especialistas em projeto, fabricação e manutenção de portas de enrolar manuais e automáticas. Atendemos galpões logísticos, comércio de rua e de shopping com porta de aço de enrolar de <strong style="color: #D4AF37; font-weight: 600;">alto padrão</strong> de qualidade e <strong style="color: #D4AF37; font-weight: 600;">extrema durabilidade</strong>.</p>
+        <span style="font-size: 0.85rem; margin-top: 5px;">K Portas® é uma marca registrada. Excelência em engenharia de portas de aço. <br> © 2026 Todos os direitos reservados.</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5511993123964?text=Olá,%20estou%20no%20site%20da%20K%20Portas%20e%20gostaria%20de%20falar%20com%20um%20consultor%20técnico." target="_blank" class="whatsapp-float" aria-label="Falar no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <div class="whatsapp-balloon">Dúvidas técnicas? Fale com um consultor agora!</div>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

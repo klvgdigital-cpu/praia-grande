@@ -29,4 +29,17 @@ header { background-color: #061020; border-bottom: 1px solid rgba(212, 175, 55, 
 @media (max-width: 768px) {
   .header-logo { height: 70px !important; }
   .nav-links { display: none; }
+}/* Isso vai forçar a sua logo a ser grande em qualquer versão do site */
+.header-logo {
+    height: 100px !important; 
+    width: auto !important;
+    max-height: 100px !important;
+    display: block !important;
+}
+
+/* Ajuste para celular para não ocupar a tela toda */
+@media (max-width: 768px) {
+    .header-logo {
+        height: 60px !important;
+    }
 }

@@ -1,219 +1,32 @@
-/* --- COPIE A PARTIR DAQUI --- */
+/* Reset e Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background-color: #061020; color: #F5F5F5; font-family: 'Inter', sans-serif; line-height: 1.6; }
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 5%; }
+.text-center { text-align: center; }
 
-/* Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Header e Logo Imponente */
+header { background-color: #061020; border-bottom: 1px solid rgba(212, 175, 55, 0.3); padding: 20px 0; position: sticky; top: 0; z-index: 1000; }
+.header-container { display: flex; justify-content: space-between; align-items: center; }
+.header-logo { height: 100px !important; width: auto !important; display: block; }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links a { color: #FFF; text-decoration: none; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; }
 
-html {
-    scroll-behavior: smooth;
-}
+/* Hero e Selo */
+.hero { padding: 60px 0; background: radial-gradient(circle at top, #112240 0%, #061020 100%); }
+.hero h1 { font-family: 'Montserrat', sans-serif; font-size: 2.5rem; margin: 20px 0; }
+.subtitle { color: #A0AAB5; max-width: 700px; margin: 0 auto 30px; }
+.cta-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+.btn { padding: 15px 25px; border-radius: 5px; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.9rem; }
+.btn-primary { background-color: #D4AF37; color: #061020; }
+.btn-secondary { border: 1px solid #D4AF37; color: #D4AF37; }
 
-body {
-    background-color: #0A192F;
-    color: #F5F5F5;
-    font-family: 'Inter', sans-serif;
-    line-height: 1.6;
-    overflow-x: hidden;
-}
+/* Grid de Cards e Produtos */
+.differentials-grid, .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 40px; }
+.card, .product-card { background: #112240; padding: 30px; border-radius: 10px; border: 1px solid rgba(212, 175, 55, 0.1); }
+.card h3, .product-card h3 { color: #D4AF37; margin-bottom: 15px; font-family: 'Montserrat', sans-serif; }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    margin-bottom: 0.5em;
-    color: #FFFFFF;
-}
-
-/* Container */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 5%;
-}
-
-section {
-    padding: 80px 0;
-}
-
-/* --- HEADER (LOGO AJUSTADA) --- */
-header {
-    background-color: rgba(10, 25, 47, 0.98);
-    backdrop-filter: blur(10px);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 2px solid #D4AF37; /* Linha dourada mais visível */
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 140px; /* Aumentamos para a logo respirar */
-    transition: all 0.3s ease;
-}
-
-.header-logo {
-    height: 110px !important; /* LOGO GRANDE E IMPACTANTE */
-    width: auto;
-    display: block;
-    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.5));
-    transition: transform 0.3s ease;
-}
-
-.header-logo:hover {
-    transform: scale(1.05);
-}
-
-nav .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
-
-nav a {
-    color: #F5F5F5;
-    text-decoration: none;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #D4AF37;
-}
-
-/* --- HERO SECTION --- */
-.hero {
-    padding-top: 220px; /* Aumentado para não cobrir com a logo maior */
-    padding-bottom: 120px;
-    background: radial-gradient(circle at center top, rgba(212, 175, 55, 0.12) 0%, transparent 70%);
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
-    line-height: 1.1;
-    margin-bottom: 20px;
-}
-
-.hero .subtitle {
-    max-width: 850px;
-    margin: 0 auto 40px;
-    font-size: clamp(1.1rem, 2vw, 1.4rem);
-    color: #E0E0E0;
-}
-
-/* --- BOTÕES --- */
-.cta-group {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.btn {
-    padding: 18px 32px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-}
-
-.btn-primary {
-    background-color: #D4AF37;
-    color: #0A192F;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
-}
-
-.btn-secondary {
-    border: 2px solid #D4AF37;
-    color: #D4AF37;
-}
-
-/* --- PRODUTOS (PREPARADO PARA FOTOS REAIS) --- */
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-}
-
-.product-card {
-    background-color: #112240;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid rgba(212, 175, 55, 0.15);
-    transition: all 0.3s ease;
-}
-
-.product-img-container {
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
-    background-color: #061020;
-}
-
-.product-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Faz a foto real preencher o espaço sem distorcer */
-    transition: transform 0.5s ease;
-}
-
-.product-card:hover img {
-    transform: scale(1.1);
-}
-
-/* --- WHATSAPP FLOAT --- */
-.whatsapp-float {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: #25D366;
-    color: white;
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    z-index: 9999;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-}
-
-/* --- RESPONSIVIDADE (MOBILE) --- */
+/* Responsividade */
 @media (max-width: 768px) {
-    .header-container {
-        height: 100px;
-    }
-
-    .header-logo {
-        height: 75px !important; /* No celular ela ainda fica legível */
-    }
-
-    nav .nav-links {
-        display: none; /* Menu sanduíche ou oculto para foco no CTA */
-    }
-
-    .hero {
-        padding-top: 160px;
-    }
-
-    .btn {
-        width: 100%; /* Botões grandes no touch do celular */
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
+  .header-logo { height: 70px !important; }
+  .nav-links { display: none; }
 }

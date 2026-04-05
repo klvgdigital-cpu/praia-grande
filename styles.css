@@ -4,42 +4,49 @@ body { background-color: #061020; color: #F5F5F5; font-family: 'Inter', sans-ser
 .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 5%; }
 .text-center { text-align: center; }
 
-/* Header e Logo Imponente */
-header { background-color: #061020; border-bottom: 1px solid rgba(212, 175, 55, 0.3); padding: 20px 0; position: sticky; top: 0; z-index: 1000; }
+/* Header e Logo (Ajustada para 120px para ficar bem imponente) */
+header { background-color: #061020; border-bottom: 1px solid rgba(212, 175, 55, 0.3); padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
 .header-container { display: flex; justify-content: space-between; align-items: center; }
-.header-logo { height: 100px !important; width: auto !important; display: block; }
+
+.header-logo { 
+    height: 120px !important; 
+    width: auto !important; 
+    max-height: 120px !important;
+    display: block !important;
+    transition: 0.3s;
+}
+
 .nav-links { list-style: none; display: flex; gap: 20px; }
 .nav-links a { color: #FFF; text-decoration: none; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; }
 
 /* Hero e Selo */
-.hero { padding: 60px 0; background: radial-gradient(circle at top, #112240 0%, #061020 100%); }
-.hero h1 { font-family: 'Montserrat', sans-serif; font-size: 2.5rem; margin: 20px 0; }
-.subtitle { color: #A0AAB5; max-width: 700px; margin: 0 auto 30px; }
+.hero { padding: 80px 0; background: radial-gradient(circle at top, #112240 0%, #061020 100%); }
+.hero h1 { font-family: 'Montserrat', sans-serif; font-size: 3rem; margin: 20px 0; color: #FFFFFF; }
+.subtitle { color: #A0AAB5; max-width: 700px; margin: 0 auto 30px; font-size: 1.1rem; }
+
+/* Botões */
 .cta-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
-.btn { padding: 15px 25px; border-radius: 5px; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.9rem; }
-.btn-primary { background-color: #D4AF37; color: #061020; }
-.btn-secondary { border: 1px solid #D4AF37; color: #D4AF37; }
+.btn { padding: 18px 30px; border-radius: 5px; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.9rem; transition: 0.3s; }
+.btn-primary { background-color: #D4AF37; color: #061020; border: none; }
+.btn-secondary { border: 2px solid #D4AF37; color: #D4AF37; background: transparent; }
+.btn:hover { opacity: 0.8; transform: translateY(-2px); }
 
-/* Grid de Cards e Produtos */
-.differentials-grid, .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 40px; }
-.card, .product-card { background: #112240; padding: 30px; border-radius: 10px; border: 1px solid rgba(212, 175, 55, 0.1); }
-.card h3, .product-card h3 { color: #D4AF37; margin-bottom: 15px; font-family: 'Montserrat', sans-serif; }
+/* Grid de Diferenciais */
+#diferencial { padding: 80px 0; }
+.differentials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
+.card { background: #112240; padding: 40px; border-radius: 12px; border: 1px solid rgba(212, 175, 55, 0.1); transition: 0.3s; }
+.card:hover { border-color: #D4AF37; }
+.card h3 { color: #D4AF37; margin-bottom: 15px; font-family: 'Montserrat', sans-serif; font-size: 1.4rem; }
+.card p { color: #E0E0E0; font-size: 1rem; }
 
-/* Responsividade */
+/* Footer */
+footer { background: #061020; border-top: 1px solid rgba(212, 175, 55, 0.2); padding: 60px 0; margin-top: 80px; }
+footer p { color: #A0AAB5; font-size: 0.9rem; margin-top: 20px; }
+
+/* Responsividade Celular */
 @media (max-width: 768px) {
-  .header-logo { height: 70px !important; }
-  .nav-links { display: none; }
-}/* Isso vai forçar a sua logo a ser grande em qualquer versão do site */
-.header-logo {
-    height: 100px !important; 
-    width: auto !important;
-    max-height: 100px !important;
-    display: block !important;
-}
-
-/* Ajuste para celular para não ocupar a tela toda */
-@media (max-width: 768px) {
-    .header-logo {
-        height: 60px !important;
-    }
+    .header-logo { height: 80px !important; }
+    .nav-links { display: none; }
+    .hero h1 { font-size: 2.2rem; }
+    .header-container { justify-content: center; }
 }

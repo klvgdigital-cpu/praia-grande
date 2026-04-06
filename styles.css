@@ -135,10 +135,10 @@ header {
 }
 
 .logo-site.logo-kportas-inline {
-  width: 180px;
-  max-width: min(180px, calc(100vw - 9rem));
-  height: auto;
-  max-height: none;
+  width: auto;
+  max-width: min(160px, calc(100vw - 9rem));
+  height: 36px;
+  max-height: 36px;
   object-fit: contain;
   object-position: left center;
 }

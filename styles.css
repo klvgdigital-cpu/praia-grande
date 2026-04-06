@@ -76,6 +76,22 @@ header {
   flex-shrink: 0;
 }
 
+.main-nav {
+  display: block;
+}
+
+.mobile-menu-icon {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 8px;
+  background: rgba(17, 34, 64, 0.55);
+  cursor: pointer;
+}
+
 .header-crea-wrap {
   display: flex;
   justify-content: center;
@@ -338,6 +354,20 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+}
+
+.faq-warranty-wrap__lead {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  font-family: "Montserrat", system-ui, sans-serif;
+  margin: 0;
+}
+
+.faq-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: min(100%, 360px);
 }
 
 /* Carrossel infinito de logos — logo abaixo do Hero */
@@ -1062,10 +1092,75 @@ section {
 }
 
 /* Callback — imagem de orçamento rápido */
+.callback-card {
+  max-width: 980px;
+  margin: 0 auto;
+  background-color: #0a192f;
+  padding: 34px 30px;
+  border-radius: 12px;
+  border: 1px solid #d4af37;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  display: grid;
+  grid-template-columns: minmax(250px, 330px) minmax(320px, 1fr);
+  gap: 1.75rem 2.25rem;
+  align-items: center;
+}
+
+.callback-card__media {
+  display: flex;
+  justify-content: center;
+}
+
+.callback-card__content {
+  text-align: left;
+}
+
+.callback-card__title {
+  font-size: clamp(1.65rem, 2.4vw, 2.1rem);
+  margin-bottom: 0.65rem;
+}
+
+.callback-card__subtitle {
+  color: #e0e0e0;
+  margin-bottom: 1.5rem;
+  font-size: 1.03rem;
+  line-height: 1.6;
+}
+
+.callback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+  align-items: stretch;
+}
+
+.callback-form__input {
+  width: 100%;
+  max-width: 390px;
+  padding: 15px 16px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #d4af37;
+  background-color: #061020;
+  color: #f5f5f5;
+  font-family: "Inter", system-ui, sans-serif;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.callback-form__button {
+  width: 100%;
+  max-width: 390px;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  padding: 15px 22px;
+}
+
 .callback-cta-img {
   display: block;
-  width: min(100%, 380px);
-  max-height: 460px;
+  width: min(100%, 320px);
+  max-height: 380px;
   height: auto;
   object-fit: contain;
   border-radius: 10px;
@@ -1229,12 +1324,47 @@ section.section-reviews {
     max-width: none;
   }
 
+  .header-container {
+    position: relative;
+  }
+
   .header-logo {
     height: 46px;
   }
 
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    background: rgba(6, 16, 32, 0.98);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 10px;
+    padding: 0.85rem 1rem;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    z-index: 1100;
+  }
+
+  .main-nav.nav-open {
+    display: block;
+  }
+
   .nav-links {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .main-nav.nav-open .nav-links {
+    display: flex;
+  }
+
+  .mobile-menu-icon {
+    display: inline-flex;
   }
 
   .header-crea-wrap {
@@ -1407,6 +1537,19 @@ section#autoridade .clients-marquee__lead {
 @media (max-width: 768px) {
   .hero {
     padding-top: 2.8rem;
+  }
+
+  .callback-card {
+    grid-template-columns: 1fr;
+    padding: 26px 18px;
+  }
+
+  .callback-card__content {
+    text-align: center;
+  }
+
+  .callback-form {
+    align-items: center;
   }
 
   .btn {

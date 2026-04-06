@@ -1,4 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const siteNav = document.getElementById('site-nav');
+
+    if (mobileMenuToggle && siteNav) {
+        const closeMobileMenu = () => {
+            siteNav.classList.remove('nav-open');
+            mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        };
+
+        mobileMenuToggle.addEventListener('click', () => {
+            const isOpen = siteNav.classList.toggle('nav-open');
+            mobileMenuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        siteNav.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
+        });
+    }
+
     // Fallback resiliente para assets ausentes:
     // mantém os caminhos originais, mas evita "imagem quebrada" na página.
     const fallbackAsset = './assets/logo-transparente-kportas-svg.svg';

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="172" height="58" viewBox="0 0 172 58" role="img" aria-labelledby="title desc">
+  <title id="title">Google</title>
+  <desc id="desc">Logotipo com o nome completo Google em letras coloridas.</desc>
+  <g transform="translate(11 41)" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" letter-spacing="-1.2">
+    <text x="0" y="0" fill="#4285F4">G</text>
+    <text x="30" y="0" fill="#EA4335">o</text>
+    <text x="53" y="0" fill="#FBBC05">o</text>
+    <text x="76" y="0" fill="#4285F4">g</text>
+    <text x="98" y="0" fill="#34A853">l</text>
+    <text x="111" y="0" fill="#EA4335">e</text>
+  </g>
+</svg>

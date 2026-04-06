@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Fallback resiliente para assets ausentes:
+    // mantém os caminhos originais, mas evita "imagem quebrada" na página.
+    const fallbackAsset = './assets/logo-transparente-kportas-svg.svg';
+    const pageImages = document.querySelectorAll('img');
+
+    pageImages.forEach((img) => {
+        img.addEventListener('error', () => {
+            if (img.dataset.fallbackApplied === 'true') return;
+            img.dataset.fallbackApplied = 'true';
+            img.src = fallbackAsset;
+        });
+    });
     
     const callbackForm = document.getElementById('callbackForm');
     const callbackPhone = document.getElementById('callbackPhone');

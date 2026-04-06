@@ -1413,27 +1413,27 @@ section.section-reviews {
 
 /* ===== Ajuste visual inspirado no layout de referência (somente design) ===== */
 :root {
-  --kp-bg-2: #061525;
-  --kp-bg-3: #0a1e35;
-  --kp-card-2: #112240;
+  --kp-bg-2: #0a1f38;
+  --kp-bg-3: #0d2545;
+  --kp-card-2: #122847;
   --kp-border-soft: rgba(255, 255, 255, 0.08);
 }
 
 body {
   background:
     radial-gradient(circle at 50% -12%, rgba(212, 175, 55, 0.18) 0%, rgba(212, 175, 55, 0) 38%),
-    linear-gradient(180deg, #061020 0%, var(--kp-bg-2) 45%, #071628 100%);
+    linear-gradient(180deg, #081628 0%, var(--kp-bg-2) 45%, #0c2240 100%);
 }
 
 header {
-  background-color: rgba(4, 10, 20, 0.92);
+  background-color: rgba(6, 14, 28, 0.94);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .hero {
   padding: clamp(3.25rem, 9vw, 5rem) 0 clamp(2.75rem, 6vw, 3.5rem);
   background:
-    linear-gradient(180deg, rgba(6, 16, 32, 0.42) 0%, rgba(6, 16, 32, 0.78) 65%, rgba(6, 16, 32, 0.95) 100%),
+    linear-gradient(180deg, rgba(8, 22, 42, 0.42) 0%, rgba(8, 22, 42, 0.78) 65%, rgba(8, 22, 42, 0.95) 100%),
     radial-gradient(circle at 50% -20%, rgba(212, 175, 55, 0.25) 0%, rgba(212, 175, 55, 0) 45%);
 }
 
@@ -1468,17 +1468,17 @@ section {
 }
 
 section:nth-of-type(odd) {
-  background-color: rgba(6, 16, 32, 0.55);
+  background-color: rgba(8, 20, 42, 0.60);
 }
 
 section:nth-of-type(even) {
-  background-color: rgba(10, 25, 47, 0.45);
+  background-color: rgba(12, 30, 58, 0.50);
 }
 
 .card,
 .product-card,
 .faq-item {
-  background: linear-gradient(180deg, rgba(12, 28, 52, 0.95) 0%, rgba(9, 21, 40, 0.98) 100%);
+  background: linear-gradient(180deg, rgba(14, 34, 64, 0.95) 0%, rgba(11, 26, 50, 0.98) 100%);
   border: 1px solid var(--kp-border-soft);
   border-radius: 12px;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
@@ -1530,7 +1530,7 @@ section#autoridade .clients-marquee__lead {
 
 .footer {
   background:
-    linear-gradient(180deg, rgba(4, 12, 24, 0.98) 0%, rgba(3, 8, 18, 1) 100%);
+    linear-gradient(180deg, rgba(6, 16, 34, 0.98) 0%, rgba(4, 11, 24, 1) 100%);
   border-top: 1px solid var(--kp-border-soft);
 }
 

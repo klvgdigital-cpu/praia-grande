@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
   <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="https://kportasdeenrolar.com.br/" />
   <link rel="icon" href="./assets/logo-transparente-kportas-svg.svg" type="image/svg+xml">
@@ -95,7 +96,7 @@
   <header>
     <div class="container header-container">
       <a href="/" class="logo" aria-label="K Portas® Home">
-        <img class="logo-site logo-kportas-inline" src="./assets/logo-transparente-kportas-svg.svg" width="180" height="29" alt="K Portas®">
+        <img class="logo-site logo-kportas-inline" src="./assets/logo-transparente-kportas-svg.svg" width="180" height="29" alt="K Portas®" loading="eager" fetchpriority="high">
       </a>
       <nav class="main-nav" id="site-nav">
         <ul class="nav-links">
@@ -208,7 +209,7 @@
 
         <div class="product-card">
           <div class="product-img-placeholder" style="background: transparent; height: auto; border:none; padding: 15px 15px 0 15px;">
-            <img src="./assets/motor-alta-qualidade-kportas-sem-fundo.png" alt="Motor de alta qualidade para porta de aço automática em São Paulo" loading="lazy" style="width: 100%; height: 220px; object-fit: contain; border-radius: 8px; border: 1px solid rgba(212,175,55,0.2);">
+            <img src="./assets/motor-alta-qualidade-kportas-sem-fundo.png" alt="Motor de alta qualidade para porta de aço automática em São Paulo" width="478" height="758" loading="lazy" decoding="async" style="width: 100%; height: 220px; object-fit: contain; border-radius: 8px; border: 1px solid rgba(212,175,55,0.2);">
           </div>
           <div class="product-info">
             <h3>Motores de Alta Qualidade</h3>
@@ -821,6 +822,6 @@
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

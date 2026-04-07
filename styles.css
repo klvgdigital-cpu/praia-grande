@@ -1563,6 +1563,50 @@ section#autoridade .clients-marquee__lead {
   }
 }
 
+/* ===== DEPOIMENTOS — grade 3×2, altura uniforme, alinhamento consistente ===== */
+#depoimentos .differentials-grid {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  gap: 1.25rem;
+}
+
+#depoimentos .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 28px !important;
+  box-sizing: border-box;
+}
+
+#depoimentos .card > div:first-child {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#depoimentos .card > div:first-child p {
+  flex: 1;
+}
+
+#depoimentos .review-footer {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(212, 175, 55, 0.12);
+}
+
+@media (max-width: 768px) {
+  #depoimentos .differentials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  #depoimentos .differentials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* ===== DEPOIMENTOS — estrelas e rodapé Google ===== */
 .review-stars {
   display: flex;

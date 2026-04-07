@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
-  <link rel="canonical" href="https://kportasdeenrolar.com.br/manutencao-portas_enrolar_sp" />
+  <link rel="canonical" href="https://kportasdeenrolar.com.br/manutencao-portas-enrolar-sp.html" />
   <link rel="icon" href="./assets/logo-transparente-kportas-svg.webp" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./assets/logo-transparente-kportas-svg.webp">
 </head>
@@ -24,9 +24,14 @@
         <ul class="nav-links">
           <li><a href="index.html#diferencial">Diferencial</a></li>
           <li><a href="index.html#produtos">Produtos</a></li>
+          <li><a href="residencial/">Residencial</a></li>
+          <li><a href="comercial-e-industrial/">Comercial</a></li>
+          <li><a href="serralheiro-parceiro/">Parceiros</a></li>
+          <li><a href="blog/">Blog</a></li>
+          <li><a href="trabalhe-conosco/">Carreiras</a></li>
           <li><a href="index.html#area-de-atendimento">Atendimento</a></li>
           <li><a href="index.html#faq">FAQ</a></li>
-          <li><a href="manutencao-portas-enrolar-sp.html">Blog</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
         </ul>
       </nav>
       <button class="mobile-menu-icon" id="mobile-menu-toggle" type="button" aria-label="Abrir menu de navegação" aria-controls="site-nav" aria-expanded="false">
@@ -133,7 +138,7 @@
           <div class="contact-block">
             <i class="fa-solid fa-phone contact-icon"></i>
             <div>
-              <h4 style="color: #D4AF37; margin-bottom: 5px; font-family: 'Montserrat', sans-serif;">Telefones</h4>
+              <h3 class="footer-contact__title">Telefones</h3>
               <a href="tel:+551122818474" class="contact-link" style="color: #F5F5F5; text-decoration: none; font-weight: 500; display: block; margin-bottom: 5px;">Fixo: (11) 2281-8474</a>
               <a href="https://wa.me/5511993123964" target="_blank" class="contact-link" style="color: #25D366; text-decoration: none; font-weight: 600; display: block;"><i class="fa-brands fa-whatsapp"></i> WhatsApp: (11) 99312-3964</a>
             </div>
@@ -141,11 +146,19 @@
 
           <div class="contact-block">
             <i class="fa-solid fa-location-dot contact-icon"></i>
-            <address style="font-style: normal; color: #F5F5F5; line-height: 1.5; font-weight: 500;">
-              <h4 style="color: #D4AF37; margin-bottom: 5px; font-family: 'Montserrat', sans-serif;">Sede Principal</h4>
+            <div>
+              <h3 class="footer-contact__title">Sede Principal</h3>
+              <address class="footer-contact__address" style="font-style: normal; color: #F5F5F5; line-height: 1.5; font-weight: 500;">
               Rua Engenheiro Botelho Egas, 117<br>Mandaqui, São Paulo - SP<br>CEP 02416-020
-            </address>
+              </address>
+            </div>
           </div>
+
+          <nav class="footer-aux-nav" aria-label="Institucional">
+            <a href="trabalhe-conosco/">Trabalhe Conosco</a>
+            <span class="footer-aux-nav__sep" aria-hidden="true">·</span>
+            <a href="serralheiro-parceiro/">Parceiros</a>
+          </nav>
         </div>
 
         <div class="map-container">
@@ -182,6 +195,6 @@
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

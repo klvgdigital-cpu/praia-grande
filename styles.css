@@ -415,8 +415,6 @@ section.clients-marquee-section {
   gap: clamp(0.75rem, 2vw, 1.25rem);
   width: max-content;
   animation: kp-clients-marquee 45s linear infinite;
-  will-change: transform;
-  transform: translateZ(0);
 }
 
 .clients-marquee__item {

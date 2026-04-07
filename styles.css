@@ -884,11 +884,11 @@ section {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: clamp(1.75rem, 4vw, 2.65rem);
-  max-width: min(52rem, 100%);
-  padding: clamp(1.5rem, 4vw, 2.4rem) clamp(1.35rem, 4vw, 2.5rem);
-  padding-left: clamp(1.6rem, 4.2vw, 2.65rem);
-  border-radius: 14px;
+  margin-bottom: clamp(1.15rem, 2.8vw, 1.75rem);
+  max-width: min(48rem, 100%);
+  padding: clamp(0.85rem, 2.2vw, 1.35rem) clamp(1rem, 3vw, 1.65rem);
+  padding-left: clamp(1.15rem, 3.2vw, 1.85rem);
+  border-radius: 12px;
   border: 1px solid rgba(212, 175, 55, 0.28);
   background: linear-gradient(
     145deg,
@@ -916,16 +916,26 @@ section {
 .solucoes-diferencial-section__intro .section-title {
   position: relative;
   text-shadow: 0 1px 18px rgba(0, 0, 0, 0.35);
+  font-size: clamp(1.05rem, 2.05vw, 1.42rem);
+  line-height: 1.18;
+  margin-bottom: 0.35rem;
+}
+
+@media (min-width: 992px) {
+  .solucoes-diferencial-section__intro .section-title {
+    white-space: nowrap;
+  }
 }
 
 .solucoes-diferencial-section__intro .section-desc {
   margin-bottom: 0;
+  margin-top: 0;
   position: relative;
   color: #dce3eb;
-  font-size: clamp(1.02rem, 2.2vw, 1.14rem);
+  font-size: clamp(0.9rem, 1.75vw, 1.02rem);
   font-weight: 500;
-  line-height: 1.55;
-  max-width: 38rem;
+  line-height: 1.45;
+  max-width: 36rem;
 }
 
 .solucoes-diferencial-section__solucoes {
@@ -1690,6 +1700,22 @@ section {
   }
 }
 
+/* Área de atendimento: título em duas linhas */
+#area-de-atendimento .area-atendimento__heading {
+  line-height: 1.14;
+  max-width: min(36rem, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#area-de-atendimento .area-atendimento__heading-line {
+  display: block;
+}
+
+#area-de-atendimento .area-atendimento__heading-line + .area-atendimento__heading-line {
+  margin-top: 0.22em;
+}
+
 /* Área de atendimento: foto à esquerda + texto e lista à direita */
 #area-de-atendimento .area-atendimento__layout {
   display: grid;
@@ -1955,6 +1981,10 @@ section {
 }
 
 .cta-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(1.35rem, 3.5vw, 2.25rem);
   margin-bottom: clamp(2rem, 5vw, 3rem);
 }
 
@@ -2084,8 +2114,12 @@ section {
   font-family: var(--kp-font-display);
   font-size: clamp(1.35rem, 2.5vw, 1.75rem);
   font-weight: 700;
-  margin-bottom: 0.75rem;
+  margin: 0;
   letter-spacing: 0.02em;
+}
+
+.cta-footer .btn {
+  margin-top: 0;
 }
 
 .social-links {

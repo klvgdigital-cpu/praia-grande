@@ -1285,10 +1285,48 @@ section {
   }
 }
 
-/* Área de atendimento: foto da frota / logística */
+/* Área de atendimento: foto à esquerda + texto e lista à direita */
+#area-de-atendimento .area-atendimento__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.25fr);
+  gap: clamp(1.5rem, 4vw, 2.75rem);
+  align-items: start;
+  margin-top: clamp(1.15rem, 2.5vw, 1.75rem);
+}
+
+#area-de-atendimento .area-atendimento__copy {
+  min-width: 0;
+  text-align: left;
+}
+
+#area-de-atendimento .area-atendimento__intro {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: none;
+  text-align: left;
+}
+
+#area-de-atendimento .area-atendimento__cities {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: none;
+  width: 100%;
+}
+
+#area-de-atendimento .area-atendimento__footer {
+  color: #d4af37;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: clamp(1.25rem, 3vw, 2rem);
+  line-height: 1.6;
+  text-align: left;
+}
+
 #area-de-atendimento .area-atendimento__media {
-  margin: clamp(1.35rem, 3.5vw, 2rem) auto 0;
-  max-width: min(420px, 88vw);
+  margin: 0;
+  width: 100%;
+  max-width: min(380px, 100%);
+  justify-self: start;
   aspect-ratio: 768 / 1024;
   border-radius: 12px;
   overflow: hidden;
@@ -1303,6 +1341,37 @@ section {
   object-fit: cover;
   object-position: center;
   display: block;
+}
+
+@media (max-width: 900px) {
+  #area-de-atendimento .area-atendimento__layout {
+    grid-template-columns: 1fr;
+  }
+
+  #area-de-atendimento .area-atendimento__media {
+    max-width: min(360px, 88vw);
+    margin-inline: auto;
+    justify-self: center;
+  }
+
+  #area-de-atendimento .area-atendimento__copy {
+    text-align: center;
+  }
+
+  #area-de-atendimento .area-atendimento__intro {
+    text-align: center;
+    max-width: 38rem;
+    margin-inline: auto;
+  }
+
+  #area-de-atendimento .area-atendimento__cities {
+    margin-inline: auto;
+    max-width: 38rem;
+  }
+
+  #area-de-atendimento .area-atendimento__footer {
+    text-align: center;
+  }
 }
 
 .cities-list {

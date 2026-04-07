@@ -7,8 +7,8 @@
   <meta name="description" content="Fábrica de Porta de Enrolar Automática em São Paulo. Projeto, fabricação e instalação com engenharia CREA-SP. Porta de Aço para galpão, shopping e comércio. Orçamento rápido — (11) 99312-3964.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=optional" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=optional"></noscript>
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
   <style>
@@ -49,6 +49,8 @@
     .btn-primary{background-color:var(--kp-gold);color:var(--kp-bg);box-shadow:0 6px 20px rgba(212,175,55,.22)}
     .btn-secondary{border:1px solid var(--kp-gold);color:var(--kp-gold);background:transparent}
     .mt-4{margin-top:1.25rem}
+    /* Prevent CLS from async Font Awesome: reserve icon space before FA CSS loads */
+    .fa-solid,.fa-brands,.fa-regular,.fa-light{display:inline-block;min-width:.875em;font-style:normal;line-height:1;vertical-align:-.125em}
   </style>
   <link rel="stylesheet" href="styles.css">
   <link rel="preload" as="image" href="./assets/novo-logo-oficial-kportas.webp" type="image/webp" fetchpriority="high">

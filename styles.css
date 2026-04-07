@@ -772,6 +772,131 @@ section.kp-serralheiro-banner {
   }
 }
 
+/* Banner estratégico: parceria para serralheiros (após grade #personalizacao, antes #revenda) */
+section.kp-parceiro-banner {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(212, 175, 55, 0.14);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  background: linear-gradient(
+    165deg,
+    #0c1f38 0%,
+    #061020 48%,
+    #020509 100%
+  );
+  min-height: clamp(300px, 34vh, 400px);
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.kp-parceiro-banner__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) auto;
+  gap: clamp(1.35rem, 3.5vw, 2.5rem);
+  align-items: center;
+  width: 100%;
+  max-width: var(--kp-max);
+  margin: 0 auto;
+  padding-block: clamp(1.75rem, 4vw, 2.75rem);
+  padding-inline: clamp(1rem, 4vw, 1.75rem);
+}
+
+.kp-parceiro-banner__copy {
+  min-width: 0;
+  text-align: left;
+}
+
+.kp-parceiro-banner__title {
+  font-family: var(--kp-font-display);
+  font-size: clamp(1.32rem, 2.75vw, 1.95rem);
+  font-weight: 800;
+  color: var(--kp-gold);
+  margin: 0 0 0.65rem;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+
+.kp-parceiro-banner__text {
+  margin: 0;
+  color: #f5f5f5;
+  font-size: clamp(0.98rem, 1.55vw, 1.1rem);
+  line-height: 1.62;
+  max-width: 42rem;
+}
+
+.kp-parceiro-banner__cta {
+  justify-self: end;
+  align-self: center;
+}
+
+.kp-parceiro-banner__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.65rem;
+  font-family: var(--kp-font-display);
+  font-size: clamp(0.86rem, 1.15vw, 0.98rem);
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  color: #061020;
+  background: linear-gradient(180deg, #e6c34a 0%, #d4af37 55%, #c9a432 100%);
+  border: 2px solid rgba(212, 175, 55, 0.55);
+  border-radius: 10px;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.38);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.kp-parceiro-banner__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.42);
+  filter: brightness(1.05);
+}
+
+.kp-parceiro-banner__btn:focus-visible {
+  outline: 2px solid #f5f5f5;
+  outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  section.kp-parceiro-banner {
+    min-height: clamp(280px, 42vh, 380px);
+  }
+
+  .kp-parceiro-banner__inner {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 1.25rem;
+    padding-block: clamp(1.5rem, 5vw, 2.25rem);
+  }
+
+  .kp-parceiro-banner__copy {
+    text-align: center;
+  }
+
+  .kp-parceiro-banner__text {
+    margin-inline: auto;
+  }
+
+  .kp-parceiro-banner__cta {
+    justify-self: stretch;
+    width: 100%;
+    max-width: min(22rem, 100%);
+    order: 3;
+  }
+
+  .kp-parceiro-banner__btn {
+    width: 100%;
+    white-space: normal;
+    text-align: center;
+    padding-block: 1rem;
+  }
+}
+
 .section-desc--emphasis {
   max-width: 42rem;
   color: #f5f5f5;

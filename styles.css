@@ -2954,3 +2954,11 @@ article.kp-blog-feed__item:hover {
   font-size: 0.82rem;
   color: var(--kp-muted);
 }
+
+.kp-blog-news-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  height: 100%;
+}

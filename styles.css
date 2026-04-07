@@ -1290,8 +1290,20 @@ section {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.25fr);
   gap: clamp(1.5rem, 4vw, 2.75rem);
-  align-items: start;
+  align-items: center;
   margin-top: clamp(1.15rem, 2.5vw, 1.75rem);
+  padding: clamp(1.35rem, 3.5vw, 2.25rem);
+  border-radius: 16px;
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  background: linear-gradient(
+    145deg,
+    rgba(17, 34, 64, 0.58) 0%,
+    rgba(10, 25, 41, 0.78) 48%,
+    rgba(6, 16, 32, 0.72) 100%
+  );
+  box-shadow:
+    0 24px 56px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.045);
 }
 
 #area-de-atendimento .area-atendimento__copy {
@@ -1304,6 +1316,9 @@ section {
   margin-right: 0;
   max-width: none;
   text-align: left;
+  color: #e8ecf1;
+  font-size: clamp(1.02rem, 0.9vw + 0.92rem, 1.14rem);
+  line-height: 1.68;
 }
 
 #area-de-atendimento .area-atendimento__cities {
@@ -1311,13 +1326,43 @@ section {
   margin-right: 0;
   max-width: none;
   width: 100%;
+  gap: 0.65rem 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+}
+
+#area-de-atendimento .area-atendimento__cities li {
+  margin: 0;
+  padding: 0.55rem 0.8rem 0.55rem 1.85rem;
+  border-radius: 10px;
+  background: rgba(212, 175, 55, 0.065);
+  border: 1px solid rgba(212, 175, 55, 0.16);
+  color: #dce1e8;
+  font-size: 0.93rem;
+  line-height: 1.45;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+#area-de-atendimento .area-atendimento__cities li:hover {
+  border-color: rgba(212, 175, 55, 0.32);
+  background: rgba(212, 175, 55, 0.1);
+}
+
+#area-de-atendimento .area-atendimento__cities li::before {
+  left: 0.78rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  opacity: 0.88;
 }
 
 #area-de-atendimento .area-atendimento__footer {
   color: #d4af37;
   font-weight: 600;
   font-size: 1.1rem;
-  margin-top: clamp(1.25rem, 3vw, 2rem);
+  margin-top: clamp(1.35rem, 3vw, 1.85rem);
+  padding-top: clamp(1rem, 2.5vw, 1.35rem);
+  border-top: 1px solid rgba(212, 175, 55, 0.14);
   line-height: 1.6;
   text-align: left;
 }
@@ -1330,8 +1375,8 @@ section {
   aspect-ratio: 768 / 1024;
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid rgba(212, 175, 55, 0.35);
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.32);
   background: rgba(4, 13, 26, 0.5);
 }
 
@@ -1346,6 +1391,8 @@ section {
 @media (max-width: 900px) {
   #area-de-atendimento .area-atendimento__layout {
     grid-template-columns: 1fr;
+    align-items: start;
+    padding: clamp(1.15rem, 4vw, 1.65rem);
   }
 
   #area-de-atendimento .area-atendimento__media {
@@ -1367,6 +1414,7 @@ section {
   #area-de-atendimento .area-atendimento__cities {
     margin-inline: auto;
     max-width: 38rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   #area-de-atendimento .area-atendimento__footer {

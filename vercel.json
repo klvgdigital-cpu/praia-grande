@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    {
+      "source": "/residencial",
+      "destination": "/produtos/residencial/",
+      "permanent": true
+    },
+    {
+      "source": "/residencial/",
+      "destination": "/produtos/residencial/",
+      "permanent": true
+    },
+    {
+      "source": "/comercial-e-industrial",
+      "destination": "/produtos/comercial-e-industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/comercial-e-industrial/",
+      "destination": "/produtos/comercial-e-industrial/",
+      "permanent": true
+    }
+  ]
+}

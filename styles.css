@@ -705,16 +705,16 @@ section {
   margin: clamp(0.5rem, 1.5vw, 0.85rem) auto 0;
   max-width: 36rem;
   padding: 0 clamp(0.5rem, 2vw, 1rem);
-  font-size: 0.78rem;
-  line-height: 1.45;
-  color: #8f97a0;
+  font-size: clamp(0.86rem, 1.15vw, 0.95rem);
+  line-height: 1.5;
+  color: #9aa3ad;
   text-align: center;
 }
 
 #portfolio .portfolio-instagram-lite__icon {
-  margin-right: 0.2rem;
-  color: rgba(212, 175, 55, 0.55);
-  font-size: 0.82rem;
+  margin-right: 0.28rem;
+  color: rgba(212, 175, 55, 0.62);
+  font-size: clamp(0.92rem, 1.2vw, 1.02rem);
   vertical-align: -0.05em;
 }
 

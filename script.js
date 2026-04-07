@@ -82,6 +82,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Vídeo K Portas Smart: ativa preload 2s após window.load ---
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            var video = document.getElementById('kp-tech-video');
+            if (video) {
+                video.preload = 'auto';
+                video.load();
+                video.play().catch(function() {});
+            }
+        }, 2000);
+    });
+
     // --- Google Maps: carrega automaticamente ao rolar até o mapa ---
     document.querySelectorAll('.map-facade').forEach(function(el) {
         function loadMap() {

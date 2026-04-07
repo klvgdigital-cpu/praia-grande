@@ -416,14 +416,14 @@ section.clients-marquee-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 64px;
-  min-width: 150px;
-  padding: 0 0.75rem;
+  height: 90px;
+  min-width: 180px;
+  padding: 0 1rem;
 }
 
 .clients-marquee__img {
-  width: 150px;
-  height: 48px;
+  width: 190px;
+  height: 68px;
   object-fit: contain;
   object-position: center;
   background: transparent;

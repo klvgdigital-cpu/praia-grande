@@ -254,9 +254,13 @@
       <nav class="main-nav" id="site-nav">
         <ul class="nav-links">
           <li><a href="#diferencial">Diferencial</a></li>
-          <li><a href="#produtos">Produtos</a></li>
-          <li><a href="residencial/">Residencial</a></li>
-          <li><a href="comercial-e-industrial/">Comercial</a></li>
+          <li class="nav-item--dropdown">
+            <a href="produtos/">Produtos</a>
+            <ul class="nav-dropdown" role="menu">
+              <li role="none"><a href="produtos/residencial/" role="menuitem">Residencial</a></li>
+              <li role="none"><a href="produtos/comercial-e-industrial/" role="menuitem">Comercial e Industrial</a></li>
+            </ul>
+          </li>
           <li><a href="serralheiro-parceiro/">Parceiros</a></li>
           <li><a href="blog/">Blog</a></li>
           <li><a href="trabalhe-conosco/">Carreiras</a></li>
@@ -995,11 +999,11 @@
       <h2 id="kp-ecossistema-heading" class="section-title text-center">Explorar Ecossistema K Portas</h2>
       <p class="section-desc section-desc--light text-center" style="max-width: 40rem; margin-left: auto; margin-right: auto;">Soluções por segmento, parceria com montadores, carreiras e conteúdo técnico — com engenharia CREA-SP em todos os pontos de contato.</p>
       <div class="kp-ecossistema-grid">
-        <a class="kp-ecossistema-card" href="residencial/">
+        <a class="kp-ecossistema-card" href="produtos/residencial/">
           <h3 class="kp-ecossistema-card__title">Portas Residenciais</h3>
           <p class="kp-ecossistema-card__desc">Conforto e design para sua casa.</p>
         </a>
-        <a class="kp-ecossistema-card" href="comercial-e-industrial/">
+        <a class="kp-ecossistema-card" href="produtos/comercial-e-industrial/">
           <h3 class="kp-ecossistema-card__title">Soluções Industriais</h3>
           <p class="kp-ecossistema-card__desc">Segurança bruta para grandes projetos.</p>
         </a>

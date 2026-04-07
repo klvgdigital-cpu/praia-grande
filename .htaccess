@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^residencial/?$ /produtos/residencial/ [R=301,L]
+RewriteRule ^comercial-e-industrial/?$ /produtos/comercial-e-industrial/ [R=301,L]

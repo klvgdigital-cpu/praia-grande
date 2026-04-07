@@ -204,6 +204,69 @@ header {
   opacity: 1;
 }
 
+.nav-item--dropdown {
+  position: relative;
+}
+
+.nav-dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 0.35rem 0 0;
+}
+
+.nav-dropdown a {
+  letter-spacing: 0.08em;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 769px) {
+  .nav-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 230px;
+    padding: 0.65rem 0;
+    margin-top: 0.15rem;
+    background: rgba(6, 16, 32, 0.98);
+    border: 1px solid rgba(212, 175, 55, 0.22);
+    border-radius: 8px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.38);
+    z-index: 1200;
+  }
+
+  .nav-dropdown li {
+    padding: 0.4rem 1rem;
+    white-space: nowrap;
+  }
+
+  .nav-item--dropdown:hover .nav-dropdown,
+  .nav-item--dropdown:focus-within .nav-dropdown {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-item--dropdown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.45rem;
+    margin-top: 0.35rem;
+    padding-left: 0.35rem;
+    border-left: 2px solid rgba(212, 175, 55, 0.28);
+  }
+}
+
 /* HERO */
 .hero {
   padding: clamp(2.5rem, 7vw, 3.75rem) 0 clamp(2.25rem, 4.5vw, 3rem);

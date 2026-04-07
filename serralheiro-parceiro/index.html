@@ -25,9 +25,13 @@
       <nav class="main-nav" id="site-nav">
         <ul class="nav-links">
           <li><a href="../index.html#diferencial">Diferencial</a></li>
-          <li><a href="../index.html#produtos">Produtos</a></li>
-          <li><a href="../residencial/">Residencial</a></li>
-          <li><a href="../comercial-e-industrial/">Comercial</a></li>
+          <li class="nav-item--dropdown">
+            <a href="../produtos/">Produtos</a>
+            <ul class="nav-dropdown" role="menu">
+              <li role="none"><a href="../produtos/residencial/" role="menuitem">Residencial</a></li>
+              <li role="none"><a href="../produtos/comercial-e-industrial/" role="menuitem">Comercial e Industrial</a></li>
+            </ul>
+          </li>
           <li><a href="../serralheiro-parceiro/">Parceiros</a></li>
           <li><a href="../blog/">Blog</a></li>
           <li><a href="../trabalhe-conosco/">Carreiras</a></li>

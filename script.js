@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fallback resiliente para assets ausentes:
     // mantém os caminhos originais, mas evita "imagem quebrada" na página.
-    const fallbackAsset = './assets/logo-transparente-kportas-svg.svg';
+    const fallbackAsset = '/assets/logo-transparente-kportas-svg.webp';
     const pageImages = document.querySelectorAll('img');
 
     pageImages.forEach((img) => {

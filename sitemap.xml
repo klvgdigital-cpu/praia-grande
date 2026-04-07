@@ -6,12 +6,17 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://kportasdeenrolar.com.br/residencial/</loc>
+    <loc>https://kportasdeenrolar.com.br/produtos/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kportasdeenrolar.com.br/produtos/residencial/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://kportasdeenrolar.com.br/comercial-e-industrial/</loc>
+    <loc>https://kportasdeenrolar.com.br/produtos/comercial-e-industrial/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>

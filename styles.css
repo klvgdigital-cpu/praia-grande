@@ -690,6 +690,105 @@ section {
   margin-top: clamp(3rem, 6vw, 4.75rem);
 }
 
+/* Faixa dourada: serralheiros / parceiros (foto + texto) */
+.kp-serralheiro-banner {
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.95) 0%, rgba(184, 150, 38, 0.95) 100%);
+  padding: clamp(1.75rem, 4vw, 2.5rem) 0;
+  border-top: 2px solid #061020;
+  border-bottom: 2px solid #061020;
+}
+
+.kp-serralheiro-banner__wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
+  gap: clamp(1.25rem, 4vw, 2.75rem);
+  align-items: center;
+  max-width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+.kp-serralheiro-banner__media {
+  margin: 0;
+  justify-self: center;
+}
+
+.kp-serralheiro-banner__img {
+  display: block;
+  width: 100%;
+  max-width: min(280px, 100%);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 3px solid rgba(6, 16, 32, 0.22);
+  box-shadow:
+    0 12px 40px rgba(6, 16, 32, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.25) inset;
+}
+
+.kp-serralheiro-banner__body {
+  min-width: 0;
+}
+
+.kp-serralheiro-banner__title {
+  color: #061020;
+  font-family: var(--kp-font-display);
+  font-weight: 800;
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.65rem, 3.2vw, 2.3rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.kp-serralheiro-banner__lead {
+  color: #0a192f;
+  font-size: clamp(1.02rem, 2vw, 1.15rem);
+  font-weight: 700;
+  margin: 0 0 1.35rem;
+  line-height: 1.45;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kp-serralheiro-banner__btn {
+  background-color: #061020;
+  color: #d4af37;
+  padding: 16px 40px;
+  font-weight: 700;
+  font-size: clamp(0.88rem, 1.5vw, 1.05rem);
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.38);
+  border: none;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kp-serralheiro-banner__btn:hover {
+  color: #e8c84a;
+  transform: translateY(-1px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.42);
+}
+
+@media (max-width: 720px) {
+  .kp-serralheiro-banner__wrap {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    text-align: center;
+  }
+
+  .kp-serralheiro-banner__media {
+    order: -1;
+  }
+
+  .kp-serralheiro-banner__img {
+    max-width: min(240px, 72vw);
+  }
+}
+
 .section-desc--emphasis {
   max-width: 42rem;
   color: #f5f5f5;

@@ -700,6 +700,121 @@ section {
   margin-bottom: clamp(1.5rem, 4vw, 2.25rem);
 }
 
+/* Portfolio: bloco pós-galeria (diferencial + CTA Instagram) */
+#portfolio .portfolio-after-grid {
+  margin-top: clamp(2.5rem, 5vw, 3.75rem);
+  padding-top: clamp(1.5rem, 3vw, 2rem);
+  border-top: 1px solid rgba(212, 175, 55, 0.5);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 2.5vw, 1.35rem);
+}
+
+#portfolio .portfolio-after-grid__box {
+  background-color: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 10px;
+  padding: clamp(1.1rem, 2.5vw, 1.35rem) clamp(1.1rem, 2.5vw, 1.5rem);
+  text-align: left;
+}
+
+#portfolio .portfolio-instagram-cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#portfolio .portfolio-instagram-cta__lead {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1;
+  min-width: min(100%, 16rem);
+}
+
+#portfolio .portfolio-instagram-cta__icon {
+  flex-shrink: 0;
+  width: 3.15rem;
+  height: 3.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  font-size: 1.7rem;
+  color: var(--kp-gold);
+}
+
+#portfolio .portfolio-instagram-cta__kicker {
+  margin: 0 0 0.35rem;
+  font-family: var(--kp-font-display);
+  font-weight: 700;
+  font-size: clamp(1.02rem, 2vw, 1.12rem);
+  color: var(--kp-gold);
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+
+#portfolio .portfolio-instagram-cta__text {
+  margin: 0;
+  color: #a0aab5;
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+
+#portfolio .portfolio-instagram-cta__action {
+  flex-shrink: 0;
+}
+
+#portfolio .portfolio-instagram-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.35rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid var(--kp-gold);
+  color: var(--kp-gold);
+  background: rgba(6, 16, 32, 0.45);
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+#portfolio .portfolio-instagram-cta__btn:hover {
+  background: rgba(212, 175, 55, 0.14);
+  color: #f5f5f5;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  #portfolio .portfolio-instagram-cta {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  #portfolio .portfolio-instagram-cta__lead {
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+  }
+
+  #portfolio .portfolio-instagram-cta__btn {
+    width: 100%;
+  }
+}
+
 .section-desc--ssma {
   max-width: 850px;
   color: #e0e0e0;

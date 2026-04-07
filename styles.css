@@ -93,8 +93,8 @@ header {
 }
 
 .crea-announcement-bar {
-  background-color: #ffffff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: transparent;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
   width: 100%;
 }
 
@@ -113,7 +113,7 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.2rem 0.35rem;
-  color: #00204E;
+  color: #a0aab5;
   font-weight: 600;
   font-size: clamp(0.9rem, 1.15vw, 1.02rem);
   font-family: var(--kp-font-display);

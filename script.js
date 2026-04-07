@@ -82,6 +82,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Google Maps lazy / click-to-load ---
+    document.querySelectorAll('.map-facade').forEach(function(el) {
+        function loadMap() {
+            var src = el.dataset.mapSrc;
+            var iframe = document.createElement('iframe');
+            iframe.src = src;
+            iframe.width = '100%';
+            iframe.height = '100%';
+            iframe.style.cssText = 'border:0;border-radius:8px;min-height:350px;';
+            iframe.setAttribute('allowfullscreen', '');
+            iframe.setAttribute('loading', 'eager');
+            iframe.setAttribute('referrerpolicy', 'no-referrer-when-downgrade');
+            iframe.setAttribute('title', 'Localização K Portas® — Rua Engenheiro Botelho Egas, 117, Mandaqui, São Paulo');
+            el.parentElement.replaceChild(iframe, el);
+        }
+        el.addEventListener('click', loadMap);
+        el.addEventListener('keypress', function(e) { if (e.key === 'Enter' || e.key === ' ') loadMap(); });
+    });
+
     // --- FAQ Accordion Logic ---
     const faqQuestions = document.querySelectorAll('.faq-question');
     

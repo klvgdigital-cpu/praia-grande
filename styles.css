@@ -1562,3 +1562,83 @@ section#autoridade .clients-marquee__lead {
     max-width: 26rem;
   }
 }
+
+/* ===== SEÇÃO NÚMEROS DE AUTORIDADE ===== */
+.stats-authority {
+  background: #ffffff;
+  padding: clamp(1.75rem, 4vw, 2.5rem) 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  align-items: center;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: clamp(1rem, 3vw, 1.5rem) clamp(0.75rem, 2.5vw, 1.5rem);
+  gap: 0.4rem;
+}
+
+.stat-item--divider {
+  border-left: 1px solid rgba(0, 32, 78, 0.12);
+  border-right: 1px solid rgba(0, 32, 78, 0.12);
+}
+
+.stat-item__icon {
+  font-size: clamp(1.4rem, 3vw, 1.75rem);
+  color: #D4AF37;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.stat-item__number {
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: #00204E;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.stat-item__number--text {
+  font-size: clamp(1.35rem, 3.5vw, 1.9rem);
+  letter-spacing: 0;
+}
+
+.stat-item__label {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: clamp(0.75rem, 1.5vw, 0.88rem);
+  font-weight: 600;
+  color: #1a3a6b;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+}
+
+@media (max-width: 520px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .stat-item--divider {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid rgba(0, 32, 78, 0.12);
+    border-bottom: 1px solid rgba(0, 32, 78, 0.12);
+  }
+
+  .stat-item {
+    padding: 1rem 1.5rem;
+  }
+}

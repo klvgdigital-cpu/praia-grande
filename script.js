@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Google Maps lazy / click-to-load ---
+    // --- Google Maps: carrega automaticamente ao rolar até o mapa ---
     document.querySelectorAll('.map-facade').forEach(function(el) {
         function loadMap() {
             var src = el.dataset.mapSrc;
@@ -97,7 +97,22 @@ document.addEventListener('DOMContentLoaded', () => {
             iframe.setAttribute('title', 'Localização K Portas® — Rua Engenheiro Botelho Egas, 117, Mandaqui, São Paulo');
             el.parentElement.replaceChild(iframe, el);
         }
-        el.addEventListener('click', loadMap);
+
+        // Carrega ao rolar até o mapa (sem precisar clicar)
+        if ('IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function(entries) {
+                if (entries[0].isIntersecting) {
+                    loadMap();
+                    observer.disconnect();
+                }
+            }, { rootMargin: '200px' });
+            observer.observe(el);
+        } else {
+            // Fallback para browsers antigos: carrega ao clicar
+            el.addEventListener('click', loadMap);
+        }
+
+        // Acessibilidade: também carrega ao pressionar Enter/Espaço
         el.addEventListener('keypress', function(e) { if (e.key === 'Enter' || e.key === ' ') loadMap(); });
     });
 

@@ -934,12 +934,6 @@ section {
   }
 }
 
-@media (min-width: 1280px) {
-  .produtos-solucoes-sectors {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-}
-
 .bg-darker {
   background: linear-gradient(180deg, rgba(4, 13, 26, 0.35) 0%, transparent 100%);
 }

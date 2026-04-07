@@ -15,6 +15,8 @@
   --kp-radius: 10px;
   --kp-font-sans: "Inter", system-ui, sans-serif;
   --kp-font-display: "Montserrat", system-ui, sans-serif;
+  /* Altura aproximada do header (padding + logo + borda) para faixa CREA sticky */
+  --kp-header-sticky-offset: 75px;
 }
 
 * {
@@ -93,9 +95,14 @@ header {
 }
 
 .crea-announcement-bar {
-  background-color: transparent;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  position: sticky;
+  top: var(--kp-header-sticky-offset);
+  z-index: 999;
   width: 100%;
+  background-color: rgba(5, 7, 11, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
 }
 
 .header-crea-wrap {
@@ -113,11 +120,11 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.2rem 0.35rem;
-  color: #a0aab5;
-  font-weight: 600;
+  color: #ffffff;
+  font-weight: 500;
   font-size: clamp(0.9rem, 1.15vw, 1.02rem);
   font-family: var(--kp-font-display);
-  letter-spacing: 0.02em;
+  letter-spacing: -0.025em;
   line-height: 1;
   white-space: nowrap;
 }
@@ -2372,6 +2379,10 @@ section.section-reviews {
 
 /* MOBILE */
 @media (max-width: 768px) {
+  :root {
+    --kp-header-sticky-offset: 72px;
+  }
+
   .hero h1 {
     max-width: none;
   }

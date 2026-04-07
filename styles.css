@@ -139,6 +139,7 @@ header {
   max-width: min(180px, calc(100vw - 9rem));
   height: auto;
   max-height: none;
+  aspect-ratio: 600 / 148;
   object-fit: contain;
   object-position: left center;
 }
@@ -752,6 +753,7 @@ section {
 
 .product-img-placeholder {
   border-radius: 8px;
+  min-height: 220px;
 }
 
 .product-img {
@@ -969,6 +971,7 @@ section {
   width: 165px;
   max-width: 165px;
   height: auto;
+  aspect-ratio: 600 / 148;
   object-fit: contain;
   object-position: left center;
   display: block;
@@ -1108,6 +1111,7 @@ section {
 .callback-card__media {
   display: flex;
   justify-content: center;
+  min-height: 280px;
 }
 
 .callback-card__content {
@@ -1161,6 +1165,7 @@ section {
   width: min(100%, 320px);
   max-height: 380px;
   height: auto;
+  aspect-ratio: 819 / 1024;
   object-fit: contain;
   border-radius: 10px;
   border: 1px solid rgba(212, 175, 55, 0.28);
@@ -1202,6 +1207,7 @@ section.section-reviews {
   height: 44px;
   width: auto;
   max-width: 172px;
+  aspect-ratio: 172 / 58;
   object-fit: contain;
   object-position: center;
   display: block;

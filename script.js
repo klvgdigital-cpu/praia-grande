@@ -113,25 +113,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Acessibilidade: também carrega ao pressionar Enter/Espaço
-        el.addEventListener('keypress', function(e) { if (e.key === 'Enter' || e.key === ' ') loadMap(); });
+        el.addEventListener('keydown', function(e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); loadMap(); } });
     });
 
     // --- FAQ Accordion Logic ---
     const faqQuestions = document.querySelectorAll('.faq-question');
-    
-    faqQuestions.forEach(question => {
-        question.addEventListener('click', () => {
+
+    faqQuestions.forEach((question) => {
+        const activate = () => {
             const currentItem = question.parentElement;
-            
-            // Fecha todos os outros (Opcional, mas dá elegância)
-            document.querySelectorAll('.faq-item').forEach(item => {
+            document.querySelectorAll('.faq-item').forEach((item) => {
                 if (item !== currentItem) {
                     item.classList.remove('active');
+                    const q = item.querySelector('.faq-question');
+                    if (q) q.setAttribute('aria-expanded', 'false');
                 }
             });
-            
-            // Inverte o atual
             currentItem.classList.toggle('active');
+            question.setAttribute('aria-expanded', currentItem.classList.contains('active') ? 'true' : 'false');
+        };
+
+        question.addEventListener('click', activate);
+        question.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                activate();
+            }
         });
     });
 

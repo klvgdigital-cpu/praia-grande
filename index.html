@@ -53,6 +53,7 @@
     /* Prevent CLS from async Font Awesome: reserve icon space before FA CSS loads */
     .fa-solid,.fa-brands,.fa-regular,.fa-light{display:inline-block;min-width:.875em;font-style:normal;line-height:1;vertical-align:-.125em}
   </style>
+  <link rel="preload" href="styles.css" as="style">
   <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="https://kportasdeenrolar.com.br/" />
   <link rel="icon" href="./assets/favicon-kportas.webp" type="image/webp">
@@ -265,14 +266,15 @@
     </div>
   </header>
 
-  <div class="crea-announcement-bar" role="region" aria-label="Responsabilidade técnica CREA">
+  <aside class="crea-announcement-bar" aria-label="Responsabilidade técnica CREA">
     <div class="container header-crea-wrap">
       <span class="header-crea-pill">
         Empresa com Responsabilidade Técnica - Registro<span class="crea-wordmark crea-wordmark--hero"><img src="./assets/logo-crea.png.webp" alt="Selo CREA-SP da engenharia K Portas® em São Paulo" width="90" height="21" loading="eager" decoding="async"><span class="visually-hidden">CREA</span></span>
       </span>
     </div>
-  </div>
+  </aside>
 
+  <main id="conteudo-principal">
   <section class="hero">
     <div class="container text-center hero-content">
       <h1><span style="color: #D4AF37;">Fábrica de Portas de Enrolar Automáticas:</span> Segurança para Residências, Comércios e Indústrias</h1>
@@ -324,7 +326,7 @@
 
   <section id="autoridade" class="clients-marquee-section" aria-label="Marcas e instituições atendidas pela K Portas®">
     <p class="clients-marquee__lead">Empresas e instituições que confiam na engenharia K Portas®</p>
-    <div class="clients-marquee" role="presentation">
+    <div class="clients-marquee">
       <div class="clients-marquee__track">
         <div class="clients-marquee__item"><img class="clients-marquee__img" src="./assets/joge.png.webp" alt="JOGE" width="160" height="64" loading="lazy" decoding="async"></div>
         <div class="clients-marquee__item"><img class="clients-marquee__img" src="./assets/logo_policiamilitar_high.png.webp" alt="Polícia Militar" width="160" height="64" loading="lazy" decoding="async"></div>
@@ -388,7 +390,7 @@
           <aside class="produtos-engenharia-card" aria-labelledby="produtos-engenharia-heading">
             <div class="produtos-engenharia-card__accent" aria-hidden="true"></div>
             <div class="produtos-engenharia-card__crea">
-              <img src="./assets/engenhariacivil-kportas.webp" alt="Símbolo oficial da Engenharia (CONFEA/CREA): Minerva na engrenagem, projeto com ART para porta de aço em São Paulo" width="512" height="512" loading="lazy" decoding="async" class="produtos-engenharia-card__crea-img">
+              <img src="./assets/engenhariacivil-kportas.webp" alt="Símbolo oficial da Engenharia (CONFEA/CREA): Minerva na engrenagem, projeto com ART para porta de aço em São Paulo" width="512" height="512" sizes="(max-width: 768px) min(92vw, 360px), min(28rem, 40vw)" loading="lazy" decoding="async" class="produtos-engenharia-card__crea-img">
             </div>
             <p class="produtos-engenharia-card__kicker"><i class="fa-solid fa-helmet-safety" aria-hidden="true"></i> O diferencial K Portas®</p>
             <h3 id="produtos-engenharia-heading" class="produtos-engenharia-card__title">Engenharia Civil Especializada e Segurança Estrutural</h3>
@@ -755,81 +757,81 @@
       <div class="faq-container mt-4">
 
         <div class="faq-item">
-          <div class="faq-question">
-            <h3>Qual o preço por metro quadrado (m²) da porta de enrolar automática?</h3>
-            <i class="fa-solid fa-plus faq-icon"></i>
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-1">
+            <h3 id="faq-q-1">Qual o preço por metro quadrado (m²) da porta de enrolar automática?</h3>
+            <i class="fa-solid fa-plus faq-icon" aria-hidden="true"></i>
           </div>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-answer-1">
             <p>O preço de uma porta de enrolar automática varia conforme o tamanho do vão, o modelo escolhido (<span style="color:#D4AF37; font-weight:600;">transvision ou fechada</span>), o tipo de motor e o acabamento (pintura eletrostática). Por isso, não trabalhamos com tabelas genéricas por m² — cada projeto recebe um <span style="color:#D4AF37; font-weight:600;">orçamento personalizado</span>, com visita técnica incluída. Entre em contato pelo WhatsApp para receber sua prévia com valores reais para o seu espaço.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-question">
-            <h3>Qual a diferença entre a porta Transvision e a porta de aço fechada?</h3>
-            <i class="fa-solid fa-plus faq-icon"></i>
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-2">
+            <h3 id="faq-q-2">Qual a diferença entre a porta Transvision e a porta de aço fechada?</h3>
+            <i class="fa-solid fa-plus faq-icon" aria-hidden="true"></i>
           </div>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-answer-2">
             <p>A <span style="color:#D4AF37; font-weight:600;">porta Transvision</span> possui lâminas microperfuradas que permitem visibilidade do interior mesmo com a porta fechada — ideal para vitrines de shoppings e lojas de alto padrão que precisam de segurança sem abrir mão da exposição dos produtos. Já a <span style="color:#D4AF37; font-weight:600;">porta de aço fechada</span> oferece privacidade total, maior isolamento acústico e mais resistência, sendo mais indicada para galpões logísticos, indústrias e comércios que priorizam segurança e isolamento.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-question">
-            <h3>Quanto tempo leva para instalar uma porta de aço automática?</h3>
-            <i class="fa-solid fa-plus faq-icon"></i>
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-3">
+            <h3 id="faq-q-3">Quanto tempo leva para instalar uma porta de aço automática?</h3>
+            <i class="fa-solid fa-plus faq-icon" aria-hidden="true"></i>
           </div>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-answer-3">
             <p>Após a <span style="color:#D4AF37; font-weight:600;">Visita Técnica de Conferência</span> e a fabricação personalizada, a instalação de uma porta de aço automática leva em média <span style="color:#D4AF37; font-weight:600;">1 a 2 dias úteis</span> para projetos padrão. O prazo total — do fechamento do pedido até a instalação completa — é de <span style="color:#D4AF37; font-weight:600;">3 a 7 dias úteis</span> para a Grande São Paulo, executado por equipe técnica própria e certificada.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-question">
-            <h3>A K Portas® atende em quais regiões?</h3>
-            <i class="fa-solid fa-plus faq-icon"></i>
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-4">
+            <h3 id="faq-q-4">A K Portas® atende em quais regiões?</h3>
+            <i class="fa-solid fa-plus faq-icon" aria-hidden="true"></i>
           </div>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-answer-4">
             <p>A K Portas® está sediada em <span style="color:#D4AF37; font-weight:600;">São Paulo — Mandaqui, Zona Norte</span>, e atende com instalação especializada toda a <span style="color:#D4AF37; font-weight:600;">Grande SP</span>, incluindo ABC Paulista, Guarulhos, Campinas, Sorocaba, Jundiaí, Baixada Santista e Litoral Norte. Para o restante do Brasil, fornecemos kits completos via transportadora (<span style="color:#D4AF37; font-weight:600;">Modalidade FOB</span>) com coleta em nossa fábrica em São Paulo.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-question">
-            <h3>A K Portas® atende cidades do Interior e Litoral?</h3>
-            <i class="fa-solid fa-plus faq-icon"></i>
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-5">
+            <h3 id="faq-q-5">A K Portas® atende cidades do Interior e Litoral?</h3>
+            <i class="fa-solid fa-plus faq-icon" aria-hidden="true"></i>
           </div>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-answer-5">
             <p>Sim! Possuímos logística própria para atender todo o estado de SP, incluindo <span style="color:#D4AF37; font-weight:600;">Interior e Litoral</span>, com equipes treinadas para instalação e assistência técnica rápida.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-question">
-            <h3>Vocês atendem outros estados fora de SP?</h3>
-            <i class="fa-solid fa-plus faq-icon"></i>
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-6">
+            <h3 id="faq-q-6">Vocês atendem outros estados fora de SP?</h3>
+            <i class="fa-solid fa-plus faq-icon" aria-hidden="true"></i>
           </div>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-answer-6">
             <p>Sim! Atendemos todo o território nacional com o fornecimento de kits e materiais completos. A coleta é realizada por transportadora de preferência do cliente <span style="color:#D4AF37; font-weight:600;">(Modalidade FOB)</span> em nossa unidade fabril.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-question">
-            <h3>Vocês realizam manutenção de portas de enrolar?</h3>
-            <i class="fa-solid fa-plus faq-icon"></i>
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-7">
+            <h3 id="faq-q-7">Vocês realizam manutenção de portas de enrolar?</h3>
+            <i class="fa-solid fa-plus faq-icon" aria-hidden="true"></i>
           </div>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-answer-7">
             <p>Sim, realizamos manutenção corretiva e preventiva em <span style="color:#D4AF37; font-weight:600;">portas de aço automáticas e manuais</span>, garantindo o funcionamento seguro do seu estabelecimento.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-question">
-            <h3>Quais são as formas de pagamento para Pessoa Física e Empresas?</h3>
-            <i class="fa-solid fa-plus faq-icon"></i>
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-8">
+            <h3 id="faq-q-8">Quais são as formas de pagamento para Pessoa Física e Empresas?</h3>
+            <i class="fa-solid fa-plus faq-icon" aria-hidden="true"></i>
           </div>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-answer-8">
             <p>Aceitamos cartões de crédito, boleto bancário (sob consulta) e oferecemos condições especiais para faturamento direto para empresas e condomínios. <span style="color:#D4AF37; font-weight:600; display:block; margin-top: 10px;">Garantimos o melhor <strong style="color: #F5F5F5;">Preço para Serralheiro</strong> em peças e no <strong style="color: #F5F5F5;">Kit de Porta de Enrolar</strong>.</span></p>
           </div>
         </div>
@@ -983,6 +985,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <footer id="contato" class="footer">
     <div class="container">
@@ -1001,7 +1004,7 @@
           <div class="contact-block">
             <i class="fa-solid fa-phone contact-icon"></i>
             <div>
-              <h4 style="color: #D4AF37; margin-bottom: 5px; font-family: 'Montserrat', sans-serif;">Telefones</h4>
+              <h3 class="footer-contact__title">Telefones</h3>
               <a href="tel:+551122818474" class="contact-link" style="color: #F5F5F5; text-decoration: none; font-weight: 500; display: block; margin-bottom: 5px;">Fixo: (11) 2281-8474</a>
               <a href="https://wa.me/5511993123964" target="_blank" rel="noopener noreferrer" class="contact-link" style="color: #25D366; text-decoration: none; font-weight: 600; display: block;"><i class="fa-brands fa-whatsapp"></i> WhatsApp: (11) 99312-3964</a>
             </div>
@@ -1010,7 +1013,7 @@
           <div class="contact-block">
             <i class="fa-solid fa-envelope contact-icon"></i>
             <div>
-              <h4 style="color: #D4AF37; margin-bottom: 5px; font-family: 'Montserrat', sans-serif;">Canais de Atendimento</h4>
+              <h3 class="footer-contact__title">Canais de Atendimento</h3>
               <a href="mailto:vendas@kportas.com.br" class="contact-link" style="color: #F5F5F5; text-decoration: none; font-weight: 500; display: block; margin-bottom: 5px;">Comercial: vendas@kportas.com.br</a>
               <a href="mailto:compras@kportas.com.br" class="contact-link" style="color: #A0AAB5; text-decoration: none; font-size: 0.9rem; display: block; margin-bottom: 5px;">Fornecedores: compras@kportas.com.br</a>
               <a href="mailto:contato@kportas.com.br" class="contact-link" style="color: #A0AAB5; text-decoration: none; font-size: 0.9rem; display: block;">Administrativo: contato@kportas.com.br</a>
@@ -1019,16 +1022,18 @@
 
           <div class="contact-block">
             <i class="fa-solid fa-location-dot contact-icon"></i>
-            <address style="font-style: normal; color: #F5F5F5; line-height: 1.5; font-weight: 500;">
-              <h4 style="color: #D4AF37; margin-bottom: 5px; font-family: 'Montserrat', sans-serif;">Sede Principal</h4>
+            <div>
+              <h3 class="footer-contact__title">Sede Principal</h3>
+              <address class="footer-contact__address" style="font-style: normal; color: #F5F5F5; line-height: 1.5; font-weight: 500;">
               Rua Engenheiro Botelho Egas, 117<br>Mandaqui, São Paulo - SP<br>CEP 02416-020
-            </address>
+              </address>
+            </div>
           </div>
           
           <div class="contact-block">
             <i class="fa-solid fa-map-location-dot contact-icon"></i>
             <div style="color: #A0AAB5; font-size: 0.85rem; line-height: 1.6;">
-              <h4 style="color: #D4AF37; margin-bottom: 5px; font-family: 'Montserrat', sans-serif;">Cobertura Logística K Portas®</h4>
+              <h3 class="footer-contact__title">Cobertura Logística K Portas®</h3>
               <p style="margin:0;">Principais regiões atendidas com instalação: <strong style="color: #F5F5F5;">São Paulo (Capital), Grande ABC, Guarulhos, Campinas, Sorocaba, Jundiaí, Baixada Santista e Litoral Norte.</strong></p>
             </div>
           </div>
@@ -1036,7 +1041,7 @@
           <div class="contact-block">
             <i class="fa-regular fa-clock contact-icon"></i>
             <div style="color: #A0AAB5; font-size: 0.9rem; line-height: 1.6;">
-              <h4 style="color: #D4AF37; margin-bottom: 5px; font-family: 'Montserrat', sans-serif;">Horário de Funcionamento</h4>
+              <h3 class="footer-contact__title">Horário de Funcionamento</h3>
               <span style="color: #F5F5F5; font-weight: 500;">Segunda a Quinta-feira:</span> 08:00 às 18:00<br>
               <span style="color: #F5F5F5; font-weight: 500;">Sexta-feira:</span> 08:00 às 17:00<br>
               <span style="color: #F5F5F5; font-weight: 500;">Intervalo de Almoço:</span> 12:00 às 13:00<br>

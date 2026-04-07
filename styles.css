@@ -1887,7 +1887,9 @@ section {
   border-left: 3px solid var(--kp-gold);
 }
 
+.faq-question h3,
 .faq-question h4 {
+  margin: 0;
   font-size: 0.95rem;
   font-weight: 600;
 }
@@ -1898,6 +1900,12 @@ section {
   align-items: center;
   cursor: pointer;
   gap: 1rem;
+}
+
+.faq-question:focus-visible {
+  outline: 2px solid var(--kp-gold);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 .faq-answer {
@@ -1928,6 +1936,15 @@ section {
 }
 
 /* FOOTER E MAPA */
+.footer .footer-contact__title {
+  color: var(--kp-gold);
+  margin: 0 0 5px;
+  font-family: var(--kp-font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
 .footer {
   padding: 60px 0;
   background-color: #040d1a;

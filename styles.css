@@ -1521,6 +1521,7 @@ section#autoridade.clients-marquee-section {
   background: #ffffff !important;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding-top: clamp(1.5rem, 3vw, 2.25rem);
 }
 
 section#autoridade .clients-marquee__lead {

@@ -860,13 +860,18 @@ section {
 @media (min-width: 901px) {
   .produtos-solucoes-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+    grid-template-columns: minmax(280px, 380px) minmax(0, 1fr);
     align-items: stretch;
     gap: clamp(1.5rem, 3vw, 2.5rem);
   }
 
-  .produtos-solucoes-sectors {
+  .produtos-engenharia-card {
     grid-column: 1;
+    grid-row: 1;
+  }
+
+  .produtos-solucoes-sectors {
+    grid-column: 2;
     grid-row: 1;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
@@ -878,11 +883,6 @@ section {
     max-width: none;
     justify-self: stretch;
     width: auto;
-  }
-
-  .produtos-engenharia-card {
-    grid-column: 2;
-    grid-row: 1;
   }
 }
 

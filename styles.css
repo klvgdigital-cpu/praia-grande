@@ -1285,6 +1285,26 @@ section {
   }
 }
 
+/* Área de atendimento: foto da frota / logística */
+#area-de-atendimento .area-atendimento__media {
+  margin: clamp(1.35rem, 3.5vw, 2rem) auto 0;
+  max-width: min(420px, 88vw);
+  aspect-ratio: 768 / 1024;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+  background: rgba(4, 13, 26, 0.5);
+}
+
+#area-de-atendimento .area-atendimento__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
 .cities-list {
   list-style: none;
   display: grid;

@@ -1,3 +1,34 @@
+# K Portas — Apache (mod_rewrite)
+#
+# Uso:
+# - Domínio NOVO (kportasdeenrolar.com.br): use este ficheiro completo na raiz (public_html).
+# - Domínio ANTIGO (kportas.com.br) noutro alojamento: copie apenas o bloco 1 para o .htaccess
+#   desse servidor, ou aponte o DNS antigo para o mesmo host e use este ficheiro íntegro.
+#
+<IfModule mod_rewrite.c>
 RewriteEngine On
+RewriteBase /
+
+# ---------------------------------------------------------------------------
+# 1) Domínio antigo → home do domínio novo (301)
+#    kportas.com.br e www.kportas.com.br, qualquer caminho → https://kportasdeenrolar.com.br/
+#    O "?" no destino remove a query string (consolidação na home).
+# ---------------------------------------------------------------------------
+RewriteCond %{HTTP_HOST} ^(www\.)?kportas\.com\.br$ [NC]
+RewriteRule ^ https://kportasdeenrolar.com.br/? [R=301,L]
+
+# ---------------------------------------------------------------------------
+# 2) Domínio novo: HTTPS obrigatório + sem www (canónico do Search Console)
+#    Preserva o caminho (REQUEST_URI) exceto quando já é a URL canónica.
+# ---------------------------------------------------------------------------
+RewriteCond %{HTTP_HOST} ^www\.kportasdeenrolar\.com\.br$ [NC,OR]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^(www\.)?kportasdeenrolar\.com\.br$ [NC]
+RewriteRule ^ https://kportasdeenrolar.com.br%{REQUEST_URI} [R=301,L]
+
+# ---------------------------------------------------------------------------
+# 3) Atalhos legados (só fazem sentido no host novo)
+# ---------------------------------------------------------------------------
 RewriteRule ^residencial/?$ /produtos/residencial/ [R=301,L]
 RewriteRule ^comercial-e-industrial/?$ /produtos/comercial-e-industrial/ [R=301,L]
+</IfModule>

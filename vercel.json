@@ -1,6 +1,24 @@
 {
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "kportas.com.br" }],
+      "destination": "https://kportasdeenrolar.com.br/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.kportas.com.br" }],
+      "destination": "https://kportasdeenrolar.com.br/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.kportasdeenrolar.com.br" }],
+      "destination": "https://kportasdeenrolar.com.br/:path*",
+      "permanent": true
+    },
+    {
       "source": "/residencial",
       "destination": "/produtos/residencial/",
       "permanent": true

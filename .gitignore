@@ -1,0 +1,2 @@
+# Scripts auxiliares locais (robots.txt já bloqueia /tools/ no crawl)
+tools/

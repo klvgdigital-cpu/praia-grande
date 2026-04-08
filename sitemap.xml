@@ -21,23 +21,23 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://kportasdeenrolar.com.br/serralheiro-parceiro/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://kportasdeenrolar.com.br/trabalhe-conosco/</loc>
+    <loc>https://kportasdeenrolar.com.br/servicos/manutencao-em-sp/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://kportasdeenrolar.com.br/blog/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://kportasdeenrolar.com.br/parcerias/serralheiro/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://kportasdeenrolar.com.br/manutencao-portas-enrolar-sp.html</loc>
+    <loc>https://kportasdeenrolar.com.br/institucional/trabalhe-conosco/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://kportasdeenrolar.com.br/institucional/blog/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

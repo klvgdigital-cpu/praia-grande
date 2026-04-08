@@ -19,6 +19,41 @@
       "source": "/comercial-e-industrial/",
       "destination": "/produtos/comercial-e-industrial/",
       "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/institucional/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "/institucional/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/trabalhe-conosco",
+      "destination": "/institucional/trabalhe-conosco/",
+      "permanent": true
+    },
+    {
+      "source": "/trabalhe-conosco/",
+      "destination": "/institucional/trabalhe-conosco/",
+      "permanent": true
+    },
+    {
+      "source": "/serralheiro-parceiro",
+      "destination": "/parcerias/serralheiro/",
+      "permanent": true
+    },
+    {
+      "source": "/serralheiro-parceiro/",
+      "destination": "/parcerias/serralheiro/",
+      "permanent": true
+    },
+    {
+      "source": "/manutencao-portas-enrolar-sp.html",
+      "destination": "/servicos/manutencao-em-sp/",
+      "permanent": true
     }
   ]
 }

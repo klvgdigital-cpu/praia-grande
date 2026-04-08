@@ -27,6 +27,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -38,6 +39,50 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Imagens e mídia: evita overflow horizontal (mobile / CWV) */
+main img,
+footer img,
+section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tabelas em conteúdo editorial (envolva com .kp-table-wrap no HTML) */
+.kp-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+  margin: 0.75rem 0 1rem;
+}
+
+.kp-table-wrap table {
+  width: 100%;
+  min-width: 280px;
+  border-collapse: collapse;
+}
+
+/* Foco visível — acessibilidade (WCAG 2.4.7) */
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.nav-links a:focus-visible,
+.footer-aux-nav a:focus-visible {
+  outline: 2px solid var(--kp-gold);
+  outline-offset: 3px;
+}
+
+/* Font Awesome carregado de forma assíncrona: reduz CLS até o CSS do CDN aplicar */
+.fa-solid,
+.fa-brands,
+.fa-regular,
+.fa-light {
+  display: inline-block;
+  min-width: 0.875em;
+  font-style: normal;
+  line-height: 1;
+  vertical-align: -0.125em;
 }
 
 .container {
@@ -2544,13 +2589,21 @@ section.section-reviews {
 
   .btn {
     width: 100%;
-    text-align: center;
+    min-height: 44px;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
+    text-align: center;
   }
 
   .cta-group .btn {
     width: auto;
     min-width: min(100%, 320px);
+  }
+
+  .footer .btn.btn-primary {
+    min-height: 44px;
   }
 
   .clients-marquee__lead {

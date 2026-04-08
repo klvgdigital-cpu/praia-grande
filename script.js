@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             iframe.src = src;
             iframe.width = '100%';
             iframe.height = '100%';
-            iframe.style.cssText = 'border:0;border-radius:8px;min-height:350px;';
+            iframe.style.cssText = 'border:0;border-radius:8px;min-height:260px;';
             iframe.setAttribute('allowfullscreen', '');
             iframe.setAttribute('loading', 'eager');
             iframe.setAttribute('referrerpolicy', 'no-referrer-when-downgrade');

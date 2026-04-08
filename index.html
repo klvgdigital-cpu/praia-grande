@@ -212,6 +212,7 @@
         "availableLanguage": ["pt-BR"]
       }
     ],
+    "parentOrganization": { "@id": "https://kportasdeenrolar.com.br/#organization" },
     "areaServed": [
       {"@type": "GeoShape", "name": "Capital e Grande SP (ABC)", "box": "-24.10 -47.35 -23.20 -46.15"},
       {"@type": "GeoShape", "name": "Baixada Santista e Litoral Sul", "box": "-25.40 -48.60 -23.60 -46.90"},
@@ -241,6 +242,47 @@
       "availability": "https://schema.org/InStock",
       "seller": {"@type": "Organization", "@id": "https://kportasdeenrolar.com.br/#localbusiness"}
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://kportasdeenrolar.com.br/#organization",
+        "name": "K Portas® Engenharia",
+        "alternateName": "K Portas®",
+        "url": "https://kportasdeenrolar.com.br/",
+        "description": "Fabricação e engenharia de portas de enrolar automáticas com responsabilidade técnica CREA-SP.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://kportasdeenrolar.com.br/assets/novo-logo-oficial-kportas.webp",
+          "width": 600,
+          "height": 148
+        },
+        "image": "https://kportasdeenrolar.com.br/assets/portfolio-porta-automatica-portao-social-kportas.webp",
+        "sameAs": [
+          "https://www.instagram.com/kportas_/"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "+55-11-2281-8474",
+          "availableLanguage": ["pt-BR", "Portuguese"]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://kportasdeenrolar.com.br/#website",
+        "url": "https://kportasdeenrolar.com.br/",
+        "name": "K Portas® Engenharia",
+        "description": "Fábrica de portas de enrolar automáticas em São Paulo: projeto, fabricação e instalação com CREA-SP.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://kportasdeenrolar.com.br/#organization" },
+        "copyrightHolder": { "@id": "https://kportasdeenrolar.com.br/#organization" }
+      }
+    ]
   }
   </script>
 </head>

@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# Pasta de scripts internos (não é conteúdo público)
+Disallow: /tools/
+
 Sitemap: https://kportasdeenrolar.com.br/sitemap.xml

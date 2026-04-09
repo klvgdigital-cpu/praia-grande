@@ -683,12 +683,12 @@ a:hover {
 
 .split__img--1 {
   grid-row: span 2;
-  background-image: url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=85");
+  background-image: url("../images/galeria-02.png");
   min-height: 300px;
 }
 
 .split__img--2 {
-  background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=85");
+  background-image: url("../images/galeria-04.png");
   min-height: 150px;
 }
 
@@ -1215,6 +1215,20 @@ body.lightbox-open {
   line-height: 1.5;
 }
 
+.section--plantas .planta-card__legal a {
+  color: var(--color-champagne);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.section--plantas .planta-card__legal a:hover {
+  color: #e8d9b8;
+}
+
+#galeria-foto-1 {
+  scroll-margin-top: calc(var(--header-h) + 1rem);
+}
+
 .section__actions {
   text-align: center;
   margin-top: 2.5rem;
@@ -1243,6 +1257,10 @@ body.lightbox-open {
 .section--gallery-dark {
   background: linear-gradient(185deg, #050810 0%, var(--color-ink-soft) 50%, var(--color-midnight) 100%);
   color: var(--color-white);
+}
+
+#galeria .container {
+  width: min(52rem, 90vw);
 }
 
 .section--gallery-dark .section__title {

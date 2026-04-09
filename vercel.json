@@ -39,6 +39,16 @@
       "permanent": true
     },
     {
+      "source": "/blog/dispositivos-seguranca-porta-automatica",
+      "destination": "/institucional/blog/dispositivos-seguranca-porta-automatica/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/dispositivos-seguranca-porta-automatica/",
+      "destination": "/institucional/blog/dispositivos-seguranca-porta-automatica/",
+      "permanent": true
+    },
+    {
       "source": "/blog",
       "destination": "/institucional/blog/",
       "permanent": true

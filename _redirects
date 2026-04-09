@@ -13,3 +13,9 @@ https://www.kportasdeenrolar.com.br/* https://kportasdeenrolar.com.br/:splat 301
 /residencial /produtos/residencial/ 301
 /comercial-e-industrial/ /produtos/comercial-e-industrial/ 301
 /comercial-e-industrial /produtos/comercial-e-industrial/ 301
+
+# Blog — rotas curtas (mais específicas primeiro)
+/blog/dispositivos-seguranca-porta-automatica /institucional/blog/dispositivos-seguranca-porta-automatica/ 301
+/blog/dispositivos-seguranca-porta-automatica/ /institucional/blog/dispositivos-seguranca-porta-automatica/ 301
+/blog /institucional/blog/ 301
+/blog/ /institucional/blog/ 301

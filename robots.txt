@@ -4,7 +4,4 @@ Allow: /
 # Pasta de scripts internos (não é conteúdo público)
 Disallow: /tools/
 
-# Landing estática independente (anúncio particular — não é conteúdo institucional K Portas)
-Disallow: /apartamento-praia-grande/
-
 Sitemap: https://kportasdeenrolar.com.br/sitemap.xml

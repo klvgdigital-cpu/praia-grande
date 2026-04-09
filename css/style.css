@@ -235,8 +235,7 @@ a:hover {
 .hero__media {
   position: absolute;
   inset: 0;
-  background: url("https://images.unsplash.com/photo-1519046904887-5633a7e7e9f5?auto=format&fit=crop&w=1920&q=85")
-    center / cover no-repeat;
+  background: url("../images/hero-dubai.jpg") center / cover no-repeat;
   animation: heroKen 28s ease-in-out infinite alternate;
 }
 

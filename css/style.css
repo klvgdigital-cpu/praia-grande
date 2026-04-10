@@ -665,10 +665,8 @@ a:hover {
 }
 
 .split__visual {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  min-height: 340px;
+  display: block;
+  min-height: 280px;
 }
 
 .split__img {
@@ -682,20 +680,8 @@ a:hover {
 }
 
 .split__img--1 {
-  grid-row: span 2;
   background-image: url("../images/piscina-borda-infinita.jpeg");
-  min-height: 300px;
-}
-
-.split__img--2 {
-  background-image: url("../images/sala-de-estar-pg.jpeg");
-  min-height: 150px;
-}
-
-@media (max-width: 899px) {
-  .split__visual {
-    min-height: 280px;
-  }
+  min-height: min(52vh, 420px);
 }
 
 .location {

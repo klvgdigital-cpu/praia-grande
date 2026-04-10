@@ -7,9 +7,9 @@ Arquivos usados pelo site:
   planta-baixa-residencial-dubai.png — Plantas (segunda imagem) + última foto da galeria
   tour-360-praia.mp4                — seção Tour (vídeo HTML5)
   residencial-dubai-praia-grande.png — galeria 1 (vista aérea)
-  piscina-borda-infinita.jpeg       — galeria 2 + fundo Lazer (split grande)
+  piscina-borda-infinita.jpeg       — galeria 2 + imagem da seção Lazer
   hall-entrada-pg.jpeg              — galeria 3
-  sala-de-estar-pg.jpeg             — galeria 4 + fundo Lazer (split menor)
+  sala-de-estar-pg.jpeg             — galeria 4
   sala-ampla.jpeg, sala.jpeg, sala2-foto.jpeg — galerias 5–7
   cozinha-apto.jpeg, cozinha-ampla.jpeg, cozinha-grande.jpeg — galerias 8–10
   moveis-planejados-cozinha-praia.jpeg — galeria 11

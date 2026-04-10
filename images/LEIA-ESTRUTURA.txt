@@ -3,8 +3,8 @@ Nomes em minúsculas, sem espaços (exceto já normalizados abaixo).
 
 Arquivos usados pelo site:
   hero-dubai.jpg                    — hero + poster do vídeo do tour
-  planta-torre-a.png                — seção Plantas (unidade Torre A)
-  planta-baixa-residencial-dubai.png — Plantas (segunda imagem) + última foto da galeria
+  planta-baixa-residencial-dubai.png — seção Plantas + última foto da galeria
+  planta-torre-a.png                — opcional (não usada na página atual; pode guardar para uso futuro)
   tour-360-praia.mp4                — seção Tour (vídeo HTML5)
   residencial-dubai-praia-grande.png — galeria 1 (vista aérea)
   piscina-borda-infinita.jpeg       — galeria 2 + imagem da seção Lazer

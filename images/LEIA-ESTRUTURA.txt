@@ -34,7 +34,7 @@ Se você ainda tiver arquivos antigos em images/galeria/ com nomes longos, renom
   22-interior-1.png                     -> galeria-22.png
   23-interior-2.png                     -> galeria-23.png
 
-Planta (nome antigo possível):
-  planta-residencial-dubai-tipo-03-torre-a.png -> planta-torre-a.png
+Planta: no repositório o arquivo deve chamar-se planta-torre-a.png
+  (antigo: planta-residencial-dubai-tipo-03-bloco-a.png ou ...-torre-a.png → renomear para planta-torre-a.png)
 
 Abra o site pela raiz (index.html) com servidor local ou hospedagem; caminhos são relativos a essa pasta.

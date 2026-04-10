@@ -2,10 +2,10 @@ Pasta: apartamento-praia-grande/images/
 Nomes em minúsculas, sem espaços (exceto já normalizados abaixo).
 
 Arquivos usados pelo site:
-  hero-dubai.jpg                    — hero + poster do vídeo do tour
+  hero-dubai.jpg                    — hero (imagem principal do topo)
   planta-baixa-residencial-dubai.png — seção Plantas + última foto da galeria
   planta-torre-a.png                — opcional (não usada na página atual; pode guardar para uso futuro)
-  tour-360-praia.mp4                — seção Tour (vídeo HTML5)
+  tour-360-praia.mp4                — opcional (não embutido na página; pode enviar pelo WhatsApp)
   residencial-dubai-praia-grande.png — galeria 1 (vista aérea)
   piscina-borda-infinita.jpeg       — galeria 2 + imagem da seção Lazer
   hall-entrada-pg.jpeg              — galeria 3

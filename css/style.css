@@ -1247,8 +1247,51 @@ body.lightbox-open {
   background: var(--color-ink);
 }
 
-.tour-embed iframe,
-.tour-embed__video {
+.tour-embed--cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.25rem;
+  padding: clamp(2rem, 5vw, 3rem) 1.5rem;
+  min-height: min(52vh, 360px);
+  max-width: 36rem;
+  margin-inline: auto;
+}
+
+.tour-cta__kicker {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-champagne);
+}
+
+.tour-cta__text {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 28rem;
+}
+
+.tour-cta__text strong {
+  color: var(--color-white);
+}
+
+.tour-cta__btn {
+  margin-top: 0.25rem;
+}
+
+.tour-cta__note {
+  margin: 0;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.tour-embed iframe {
   display: block;
   width: 100%;
   height: min(72vh, 640px);
@@ -1256,11 +1299,6 @@ body.lightbox-open {
   border: 0;
   vertical-align: middle;
   background: #000;
-}
-
-.tour-embed__video {
-  object-fit: contain;
-  max-width: 100%;
 }
 
 .section--gallery-dark {

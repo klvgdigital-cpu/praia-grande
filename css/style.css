@@ -1015,6 +1015,21 @@ a:hover {
   line-height: 1.55;
 }
 
+.footer__domain {
+  margin: 0.85rem 0 0 !important;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+}
+
+.footer__domain a {
+  color: var(--color-champagne);
+  text-decoration: none;
+}
+
+.footer__domain a:hover {
+  text-decoration: underline;
+}
+
 .footer__links {
   display: flex;
   gap: 1.35rem;

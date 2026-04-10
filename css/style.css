@@ -683,12 +683,12 @@ a:hover {
 
 .split__img--1 {
   grid-row: span 2;
-  background-image: url("../images/galeria-02.png");
+  background-image: url("../images/piscina-borda-infinita.jpeg");
   min-height: 300px;
 }
 
 .split__img--2 {
-  background-image: url("../images/galeria-04.png");
+  background-image: url("../images/sala-de-estar-pg.jpeg");
   min-height: 150px;
 }
 
@@ -1261,12 +1261,19 @@ body.lightbox-open {
   background: var(--color-ink);
 }
 
-.tour-embed iframe {
+.tour-embed iframe,
+.tour-embed__video {
   display: block;
   width: 100%;
   height: min(72vh, 640px);
   min-height: 400px;
   border: 0;
+  vertical-align: middle;
+  background: #000;
+}
+
+.tour-embed__video {
+  object-fit: contain;
 }
 
 .section--gallery-dark {

@@ -181,7 +181,7 @@
           Visualize a planta da unidade e entenda a distribuição dos ambientes, a metragem e o potencial do apartamento — um passo decisivo antes de fechar, enquanto a oportunidade estiver aberta.
         </p>
       </header>
-      <div class="plantas-grid plantas-grid--single">
+      <div class="plantas-grid">
         <article class="planta-card">
           <div class="planta-card__media">
             <img
@@ -198,6 +198,22 @@
             Verifique as fotos com o apartamento real mobiliado na
             <a href="#galeria-foto-1">galeria de fotos reais</a>
             (primeira imagem do carrossel).
+          </p>
+        </article>
+        <article class="planta-card">
+          <div class="planta-card__media">
+            <img
+              class="planta-card__img"
+              src="./images/planta-baixa-residencial-dubai.png"
+              alt="Planta baixa do Residencial Dubai — visão geral do empreendimento e implantação."
+              width="1200"
+              height="900"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <p class="planta-card__legal">
+            Planta baixa do empreendimento para referência da implantação; metragens e tipologia da unidade na planta da Torre A ao lado.
           </p>
         </article>
       </div>
@@ -217,13 +233,18 @@
         </p>
       </header>
       <div class="tour-embed">
-        <iframe
-          title="Tour virtual 360° do Residencial Dubai"
-          src="https://kuula.co/share/collection/7Y5Sc/embed?fs=1&vr=1&zoom=1&sd=1&logo=0&chromeless=1&lang=pt"
-          loading="lazy"
-          allowfullscreen
-          allow="xr-spatial-tracking; accelerometer; gyroscope; fullscreen"
-        ></iframe>
+        <video
+          class="tour-embed__video"
+          controls
+          playsinline
+          preload="metadata"
+          poster="./images/hero-dubai.jpg"
+          aria-label="Tour em vídeo — Praia Grande, Residencial Dubai"
+        >
+          <source src="./images/tour-360-praia.mp4" type="video/mp4" />
+          Seu navegador não reproduz vídeo em HTML5. Use a
+          <a href="./images/tour-360-praia.mp4" download>versão para download</a>.
+        </video>
       </div>
     </div>
   </section>
@@ -241,141 +262,141 @@
         <div class="gallery-carousel__viewport">
           <div class="gallery-carousel__track" id="gallery-carousel-track">
             <div class="gallery-carousel__slide" id="galeria-foto-1">
-              <button type="button" class="gallery__item" data-src="./images/galeria-01.png" data-caption="Vista aérea do Residencial Dubai em Praia Grande">
-                <img src="./images/galeria-01.png" alt="Vista aérea do Residencial Dubai, torres e entorno urbano" width="1600" height="1000" loading="eager" decoding="async" fetchpriority="high" />
+              <button type="button" class="gallery__item" data-src="./images/residencial-dubai-praia-grande.png" data-caption="Vista aérea do Residencial Dubai em Praia Grande">
+                <img src="./images/residencial-dubai-praia-grande.png" alt="Vista aérea do Residencial Dubai, torres e entorno urbano" width="1600" height="1000" loading="eager" decoding="async" fetchpriority="high" />
                 <span>Vista aérea</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-02.png" data-caption="Piscina no rooftop com vista para o mar">
-                <img src="./images/galeria-02.png" alt="Piscina no rooftop do empreendimento com vista para o oceano" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/piscina-borda-infinita.jpeg" data-caption="Piscina no rooftop com vista para o mar">
+                <img src="./images/piscina-borda-infinita.jpeg" alt="Piscina no rooftop do empreendimento com vista para o oceano" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Piscina rooftop</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-03.png" data-caption="Hall de entrada do condomínio">
-                <img src="./images/galeria-03.png" alt="Hall de entrada decorado do Residencial Dubai" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/hall-entrada-pg.jpeg" data-caption="Hall de entrada do condomínio">
+                <img src="./images/hall-entrada-pg.jpeg" alt="Hall de entrada decorado do Residencial Dubai" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Hall de entrada</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-04.png" data-caption="Sala de estar do apartamento">
-                <img src="./images/galeria-04.png" alt="Sala de estar com sofá e acesso à sacada" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/sala-de-estar-pg.jpeg" data-caption="Sala de estar do apartamento">
+                <img src="./images/sala-de-estar-pg.jpeg" alt="Sala de estar com sofá e acesso à sacada" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Sala de estar</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-05.png" data-caption="Sala ampla">
-                <img src="./images/galeria-05.png" alt="Sala ampla com iluminação natural" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/sala-ampla.jpeg" data-caption="Sala ampla">
+                <img src="./images/sala-ampla.jpeg" alt="Sala ampla com iluminação natural" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Sala ampla</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-06.png" data-caption="Sala">
-                <img src="./images/galeria-06.png" alt="Sala do apartamento" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/sala.jpeg" data-caption="Sala">
+                <img src="./images/sala.jpeg" alt="Sala do apartamento" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Sala</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-07.png" data-caption="Sala — outro ângulo">
-                <img src="./images/galeria-07.png" alt="Sala vista de outro ângulo" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/sala2-foto.jpeg" data-caption="Sala — outro ângulo">
+                <img src="./images/sala2-foto.jpeg" alt="Sala vista de outro ângulo" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Sala — ângulo</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-08.png" data-caption="Cozinha planejada">
-                <img src="./images/galeria-08.png" alt="Cozinha com armários e bancada em granito" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/cozinha-apto.jpeg" data-caption="Cozinha planejada">
+                <img src="./images/cozinha-apto.jpeg" alt="Cozinha com armários e bancada em granito" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Cozinha</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-09.png" data-caption="Cozinha — segundo ângulo">
-                <img src="./images/galeria-09.png" alt="Cozinha vista em perspectiva" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/cozinha-ampla.jpeg" data-caption="Cozinha — segundo ângulo">
+                <img src="./images/cozinha-ampla.jpeg" alt="Cozinha vista em perspectiva" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Cozinha — perspectiva</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-10.png" data-caption="Cozinha em corredor">
-                <img src="./images/galeria-10.png" alt="Cozinha em layout corredor com eletrodomésticos" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/cozinha-grande.jpeg" data-caption="Cozinha em corredor">
+                <img src="./images/cozinha-grande.jpeg" alt="Cozinha em layout corredor com eletrodomésticos" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Cozinha — corredor</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-11.png" data-caption="Cozinha com móveis planejados">
-                <img src="./images/galeria-11.png" alt="Cozinha com móveis planejados e eletrodomésticos" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/moveis-planejados-cozinha-praia.jpeg" data-caption="Cozinha com móveis planejados">
+                <img src="./images/moveis-planejados-cozinha-praia.jpeg" alt="Cozinha com móveis planejados e eletrodomésticos" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Cozinha planejada</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-12.png" data-caption="Área de serviço">
-                <img src="./images/galeria-12.png" alt="Área de serviço com tanque e máquina de lavar" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/lavanderia-completa.jpeg" data-caption="Área de serviço">
+                <img src="./images/lavanderia-completa.jpeg" alt="Área de serviço com tanque e máquina de lavar" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Área de serviço</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-13.png" data-caption="Quarto casal">
-                <img src="./images/galeria-13.png" alt="Quarto casal com armários planejados" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/quarto-casal-dubai.jpeg" data-caption="Quarto casal">
+                <img src="./images/quarto-casal-dubai.jpeg" alt="Quarto casal com armários planejados" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Quarto casal</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-14.png" data-caption="Quarto solteiro">
-                <img src="./images/galeria-14.png" alt="Quarto solteiro ou segundo dormitório" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/quarto-solteiro.jpeg" data-caption="Quarto solteiro">
+                <img src="./images/quarto-solteiro.jpeg" alt="Quarto solteiro ou segundo dormitório" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Quarto solteiro</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-15.png" data-caption="Sacada com vista para o mar">
-                <img src="./images/galeria-15.png" alt="Sacada gourmet com vista para o mar" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/sacada-vista-mar.jpeg" data-caption="Sacada com vista para o mar">
+                <img src="./images/sacada-vista-mar.jpeg" alt="Sacada gourmet com vista para o mar" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Sacada — vista mar</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-16.png" data-caption="Vista da sacada">
-                <img src="./images/galeria-16.png" alt="Vista interna da sacada e envidraçamento" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/vista-sacada-apartamento-praiagrande.jpeg" data-caption="Vista da sacada">
+                <img src="./images/vista-sacada-apartamento-praiagrande.jpeg" alt="Vista interna da sacada e envidraçamento" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Vista da sacada</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-17.png" data-caption="Sacada gourmet">
-                <img src="./images/galeria-17.png" alt="Sacada com espaço gourmet e churrasqueira" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/sacada-pg-apartamento.jpeg" data-caption="Sacada gourmet">
+                <img src="./images/sacada-pg-apartamento.jpeg" alt="Sacada com espaço gourmet e churrasqueira" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Sacada gourmet</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-18.png" data-caption="Sacada com vista para a praia">
-                <img src="./images/galeria-18.png" alt="Sacada com vista para areia e mar" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/sacada-praia.jpeg" data-caption="Sacada com vista para a praia">
+                <img src="./images/sacada-praia.jpeg" alt="Sacada com vista para areia e mar" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Sacada — praia</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-19.png" data-caption="Sacada — ambiente">
-                <img src="./images/galeria-19.png" alt="Sacada com rede e ambiente integrado" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/sacada-praia-grande.jpeg" data-caption="Sacada — ambiente">
+                <img src="./images/sacada-praia-grande.jpeg" alt="Sacada com rede e ambiente integrado" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Sacada — ambiente</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-20.png" data-caption="Sacada à noite">
-                <img src="./images/galeria-20.png" alt="Sacada iluminada à noite" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/sacada-praia-grande-noite.jpeg" data-caption="Sacada à noite">
+                <img src="./images/sacada-praia-grande-noite.jpeg" alt="Sacada iluminada à noite" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Sacada — noite</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-21.png" data-caption="Área técnica — ar-condicionado">
-                <img src="./images/galeria-21.png" alt="Área técnica com condensadoras de ar-condicionado" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/arcondicionado-todos.jpeg" data-caption="Área técnica — ar-condicionado">
+                <img src="./images/arcondicionado-todos.jpeg" alt="Área técnica com condensadoras de ar-condicionado" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Área técnica</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-22.png" data-caption="Ambiente interno">
-                <img src="./images/galeria-22.png" alt="Ambiente interno do apartamento" width="1600" height="1000" loading="lazy" decoding="async" />
+              <button type="button" class="gallery__item" data-src="./images/apartamento-na-praia-grande.jpeg" data-caption="Ambiente interno">
+                <img src="./images/apartamento-na-praia-grande.jpeg" alt="Ambiente interno do apartamento" width="1600" height="1000" loading="lazy" decoding="async" />
                 <span>Interior</span>
               </button>
             </div>
             <div class="gallery-carousel__slide">
-              <button type="button" class="gallery__item" data-src="./images/galeria-23.png" data-caption="Ambiente interno">
-                <img src="./images/galeria-23.png" alt="Outro ângulo do interior do apartamento" width="1600" height="1000" loading="lazy" decoding="async" />
-                <span>Interior</span>
+              <button type="button" class="gallery__item" data-src="./images/planta-baixa-residencial-dubai.png" data-caption="Planta baixa do empreendimento">
+                <img src="./images/planta-baixa-residencial-dubai.png" alt="Planta baixa do Residencial Dubai — implantação do empreendimento" width="1600" height="1000" loading="lazy" decoding="async" />
+                <span>Planta baixa</span>
               </button>
             </div>
           </div>

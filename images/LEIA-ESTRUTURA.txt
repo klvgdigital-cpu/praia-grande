@@ -1,40 +1,30 @@
 Pasta: apartamento-praia-grande/images/
-Todos os arquivos em um único nível (sem subpastas), nomes em minúsculas, ASCII, sem espaços.
+Nomes em minúsculas, sem espaços (exceto já normalizados abaixo).
 
-Obrigatórios para a landing carregar tudo:
-  hero-dubai.jpg
-  planta-torre-a.png
-  galeria-01.png … galeria-23.png
+Arquivos usados pelo site:
+  hero-dubai.jpg                    — hero + poster do vídeo do tour
+  planta-torre-a.png                — seção Plantas (unidade Torre A)
+  planta-baixa-residencial-dubai.png — Plantas (segunda imagem) + última foto da galeria
+  tour-360-praia.mp4                — seção Tour (vídeo HTML5)
+  residencial-dubai-praia-grande.png — galeria 1 (vista aérea)
+  piscina-borda-infinita.jpeg       — galeria 2 + fundo Lazer (split grande)
+  hall-entrada-pg.jpeg              — galeria 3
+  sala-de-estar-pg.jpeg             — galeria 4 + fundo Lazer (split menor)
+  sala-ampla.jpeg, sala.jpeg, sala2-foto.jpeg — galerias 5–7
+  cozinha-apto.jpeg, cozinha-ampla.jpeg, cozinha-grande.jpeg — galerias 8–10
+  moveis-planejados-cozinha-praia.jpeg — galeria 11
+  lavanderia-completa.jpeg          — galeria 12 (área de serviço)
+  quarto-casal-dubai.jpeg, quarto-solteiro.jpeg — galerias 13–14
+  sacada-vista-mar.jpeg, vista-sacada-apartamento-praiagrande.jpeg — 15–16
+  sacada-pg-apartamento.jpeg, sacada-praia.jpeg, sacada-praia-grande.jpeg — 17–19
+  sacada-praia-grande-noite.jpeg    — galeria 20
+  arcondicionado-todos.jpeg         — galeria 21
+  apartamento-na-praia-grande.jpeg   — galeria 22
 
-Seção Lazer (CSS): reutiliza galeria-02.png e galeria-04.png como fundos dos dois blocos visuais.
+Correções de nome que o projeto espera:
+  lavaderia → lavanderia-completa.jpeg
+  pscina → piscina-borda-infinita.jpeg
+  "Planta baixa do Residencial Dubai.png" → planta-baixa-residencial-dubai.png
+  Apartamento-na-Praia-Grande.jpeg → apartamento-na-praia-grande.jpeg
 
-Se você ainda tiver arquivos antigos em images/galeria/ com nomes longos, renomeie e mova para images/ conforme a tabela abaixo (mesmo conteúdo, novo nome):
-
-  01-residencial-dubai-vista-aerea.png  -> galeria-01.png
-  02-piscina-rooftop.png                -> galeria-02.png
-  03-hall-entrada.png                   -> galeria-03.png
-  04-sala-de-estar.png                  -> galeria-04.png
-  05-sala-ampla.png                     -> galeria-05.png
-  06-sala.png                           -> galeria-06.png
-  07-sala-angulo.png                    -> galeria-07.png
-  08-cozinha.png                        -> galeria-08.png
-  09-cozinha-segundo-angulo.png         -> galeria-09.png
-  10-cozinha-perspectiva.png            -> galeria-10.png
-  11-cozinha-planejada.png              -> galeria-11.png
-  12-area-de-servico.png               -> galeria-12.png
-  13-quarto-casal.png                   -> galeria-13.png
-  14-quarto-solteiro.png                -> galeria-14.png
-  15-sacada-vista-mar.png               -> galeria-15.png
-  16-vista-da-sacada.png                -> galeria-16.png
-  17-sacada-gourmet.png                 -> galeria-17.png
-  18-sacada-praia.png                   -> galeria-18.png
-  19-sacada-ambiente.png                -> galeria-19.png
-  20-sacada-noite.png                   -> galeria-20.png
-  21-area-tecnica-ar-condicionado.png   -> galeria-21.png
-  22-interior-1.png                     -> galeria-22.png
-  23-interior-2.png                     -> galeria-23.png
-
-Planta: no repositório o arquivo deve chamar-se planta-torre-a.png
-  (antigo: planta-residencial-dubai-tipo-03-bloco-a.png ou ...-torre-a.png → renomear para planta-torre-a.png)
-
-Abra o site pela raiz (index.html) com servidor local ou hospedagem; caminhos são relativos a essa pasta.
+Caminhos relativos ao index.html; após trocar arquivos, faça commit e push (e subtree para praia-grande se usar esse repositório).

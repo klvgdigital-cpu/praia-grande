@@ -1275,9 +1275,6 @@ body.lightbox-open {
 .tour-embed__video {
   object-fit: contain;
   max-width: 100%;
-  aspect-ratio: 16 / 9;
-  height: auto;
-  min-height: min(72vh, 640px);
 }
 
 .section--gallery-dark {

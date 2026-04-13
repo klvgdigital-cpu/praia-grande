@@ -3,6 +3,7 @@
   var hero = document.querySelector(".hero");
   var navToggle = document.querySelector(".nav-toggle");
   var nav = document.querySelector(".nav");
+  var navBackdrop = document.getElementById("nav-backdrop");
   var yearEl = document.getElementById("year");
   var form = document.getElementById("form-contato");
   var lightbox = document.getElementById("lightbox");
@@ -30,18 +31,39 @@
     io.observe(hero);
   }
 
+  function setNavOpen(open) {
+    if (nav) {
+      nav.classList.toggle("is-open", open);
+    }
+    if (navToggle) {
+      navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      navToggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+    }
+    if (navBackdrop) {
+      navBackdrop.hidden = !open;
+      navBackdrop.setAttribute("aria-hidden", open ? "false" : "true");
+    }
+    document.documentElement.classList.toggle("nav-open", open);
+  }
+
+  function closeNav() {
+    setNavOpen(false);
+  }
+
   if (navToggle && nav) {
     navToggle.addEventListener("click", function () {
-      var open = nav.classList.toggle("is-open");
-      navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      setNavOpen(!nav.classList.contains("is-open"));
     });
 
     nav.querySelectorAll("a").forEach(function (link) {
       link.addEventListener("click", function () {
-        nav.classList.remove("is-open");
-        navToggle.setAttribute("aria-expanded", "false");
+        closeNav();
       });
     });
+  }
+
+  if (navBackdrop) {
+    navBackdrop.addEventListener("click", closeNav);
   }
 
   if (form) {
@@ -104,8 +126,15 @@
   }
 
   document.addEventListener("keydown", function (ev) {
-    if (ev.key === "Escape" && lightbox && !lightbox.hidden) {
+    if (ev.key !== "Escape") {
+      return;
+    }
+    if (lightbox && !lightbox.hidden) {
       closeLightbox();
+      return;
+    }
+    if (nav && nav.classList.contains("is-open")) {
+      closeNav();
     }
   });
 
